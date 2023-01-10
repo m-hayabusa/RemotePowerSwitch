@@ -1,0 +1,33 @@
+R"(<html>
+<meta charset="UTF-8">
+<script>
+    let name, state;
+    fetch("/state").then(async (r) => {
+        state = (await r.json()).state;
+        document.getElementById("state").innerText = state;
+    });
+    fetch("/name").then(async (r) => {
+        name = (await r.json()).name;
+        document.getElementById("host").innerText = name;
+    });
+    function req(target) {
+        fetch("/" + target, { method: "POST", headers: { "Authorization": `Basic ${btoa(name + ":" + document.getElementById("p").value)}` } }).then(
+            async r => {
+                if (r.ok) alert("OK\n" + await r.text());
+                else alert("NG\n" + r.status + "\n" + await r.text());
+            }
+        )
+    }
+    function off() {
+        if (confirm("Power Off?: " + name)) req("off");
+    }
+    function force_off() {
+        if (prompt("FORCE POWER OFF? \nRetype host name: " + name).toUpperCase() == name.toUpperCase()) req("force-off"); else alert("?");
+    }
+</script>
+host: <span id="host"></span><br>state: <span id="state"></span><br>
+password: <input id="p" type="password"></input><br>
+<button onclick='req("on")'>On</button>
+<button onclick='off()'>Off</button>
+<button onclick='force_off()'>FORCE Off</button>
+</html>)"
