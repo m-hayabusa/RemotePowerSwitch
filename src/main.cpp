@@ -51,16 +51,7 @@ void setup()
   pinMode(PIN_PWRBTN_MB, OUTPUT);
   pinMode(PIN_RSTBTN_MB, OUTPUT);
 
-  ledcSetup(0, 12800, 8);
-  ledcAttachPin(PIN_PWRLED_CASE, 0);
-  ledcSetup(1, 12800, 8);
-  ledcAttachPin(PIN_HDDLED_CASE, 1);
-
   Config.begin("config");
-
-  WiFi.mode(WIFI_MODE_STA);
-  WiFi.setAutoReconnect(true);
-  WiFi.begin(Config.getString("WIFI.SSID").c_str(), Config.getString("WIFI.PASSWORD").c_str());
 
   xTaskCreatePinnedToCore(httpServer, "web", 8192, NULL, 20, &taskHandle[0], 1);
   xTaskCreatePinnedToCore(PwrLedControl, "led", 1024, NULL, 10, &taskHandle[1], 0);
@@ -124,6 +115,11 @@ const uint16_t sinTable[] = {0, 8, 16, 24, 32, 40, 48, 56, 64, 71, 79, 87, 94, 1
 
 void LedPwm(void *pvParameters)
 {
+  ledcSetup(0, 12800, 8);
+  ledcAttachPin(PIN_PWRLED_CASE, 0);
+  ledcSetup(1, 12800, 8);
+  ledcAttachPin(PIN_HDDLED_CASE, 1);
+
   int pwrlevel = 0;
   int hddlevel = 0;
   while (1)
@@ -253,6 +249,10 @@ static WebServer server(80);
 void httpServer(void *pvParameters)
 {
   Serial.println("httpServer");
+
+  WiFi.mode(WIFI_MODE_STA);
+  WiFi.setAutoReconnect(true);
+  WiFi.begin(Config.getString("WIFI.SSID").c_str(), Config.getString("WIFI.PASSWORD").c_str());
 
   server.on("/", []()
             {
