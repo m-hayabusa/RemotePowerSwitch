@@ -62,7 +62,7 @@ void setup()
   WiFi.setAutoReconnect(true);
   WiFi.begin(Config.getString("WIFI.SSID").c_str(), Config.getString("WIFI.PASSWORD").c_str());
 
-  xTaskCreatePinnedToCore(httpServer, "web", 4096, NULL, 20, &taskHandle[0], 1);
+  xTaskCreatePinnedToCore(httpServer, "web", 8192, NULL, 20, &taskHandle[0], 1);
   xTaskCreatePinnedToCore(PwrLedControl, "led", 1024, NULL, 10, &taskHandle[1], 0);
   xTaskCreatePinnedToCore(PwrControl, "pwr", 1024, NULL, 15, &taskHandle[2], 0);
   xTaskCreatePinnedToCore(LedPwm, "pwm", 1024, NULL, 0, &taskHandle[3], 0);
@@ -281,7 +281,7 @@ void httpServer(void *pvParameters)
         result += "Off";
         break;
     }
-    result += "\"})";
+    result += "\"}";
 
     server.send(200, "application/json", result); });
 
