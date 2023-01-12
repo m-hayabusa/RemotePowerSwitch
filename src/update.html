@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        body {
+            padding: 1em;
+            color: rgb(224, 237, 249);
+            background-color: rgb(0, 120, 231);
+            max-width: 30em;
+            margin: auto;
+        }
+
+        form {
+            padding-top: 1em;
+            display: grid;
+            row-gap: .5em;
+            margin: 1em;
+        }
+
+        form label {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+        }
+
+        form label input {
+            display: none;
+        }
+
+        form button {
+            height: 2em;
+        }
+
+        audio,
+        progress {
+            height: 2em;
+        }
+
+        label,
+        button {
+            box-sizing: border-box;
+            font-size: 1em;
+            padding: 0.5em 1em;
+            font-weight: bold;
+            border: none;
+            border-radius: .5em;
+            color: white;
+            cursor: pointer;
+        }
+
+        button {
+            background-color: white;
+            color: rgb(0, 120, 231);
+        }
+
+        button:disabled {
+            background-color: rgb(129, 192, 251);
+        }
+
+        label {
+            background-color: rgb(120, 120, 231);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+        <h1>Firmware update</h1>
+        <form id="ota" action="/firmware" enctype="multipart/form-data" method="POST">
+            <label class="file">
+                <span class="target">Firmware.bin: </span> <span class="filename">(ファイルを選択)</span>
+                <input class="file_selector" type="file" accept=".bin" name="data">
+            </label>
+            <button type="submit">Upload</button>
+            <progress class="progress" max="1" value="0"></progress>
+        </form>
+    </div>
+</body>
+
+<script>
+    let locked = false;
+    {
+        const elem = document.getElementById("ota");
+
+        const gET = i => elem.getElementsByTagName(i)[0];
+        const input = gET("input");
+        const btn = gET("button");
+        const bar = gET("progress");
+
+        input.addEventListener("change", () => {
+            const file = /.*\\(.*)$/.exec(input.value)[1];
+            elem.querySelector(".filename").innerText = file;
+        });
+        elem.addEventListener('submit', (e) => {
+            e.preventDefault();
+            if (!locked) {
+                locked = true;
+                btn.setAttribute("disabled", "");
+                btn.textContent = "Uploading...";
+                const xhr = new XMLHttpRequest();
+                xhr.upload.addEventListener("progress", e => {
+                    console.log(e);
+                    bar.value = (e.loaded / e.total);
+                });
+                xhr.addEventListener("loadend", e => {
+                    locked = false;
+                    btn.removeAttribute("disabled");
+                    const txt = xhr.responseText == "" ? "?" : xhr.responseText;
+                    btn.textContent = txt;
+                    setTimeout(() => { if (btn.textContent == txt) btn.textContent = "Upload" }, 1000);
+                    if (typeof onUploadEnd == "function") { onUploadEnd() }
+                });
+                xhr.open("POST", elem.getAttribute("action"));
+                xhr.send(new FormData(elem));
+            }
+        });
+    };
+</script>

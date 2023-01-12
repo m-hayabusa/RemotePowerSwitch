@@ -2,6 +2,7 @@
 #include <ESPmDNS.h>
 #include <WebServer.h>
 #include <Preferences.h>
+#include <Update.h>
 
 #define PIN_PWRLED_MB 5
 #define PIN_HDDLED_MB 4
@@ -357,6 +358,53 @@ void httpServer(void *pvParameters)
     } else {
       server.send(409, "text/plain", "already off");
     } });
+
+  server.on("/update", HTTP_GET, []()
+            {
+#include "update.html.cpp"
+        server.send(200, "text/html", UPDATE_HTML); });
+  // OTA Update
+  server.on(
+      "/firmware", HTTP_POST, []()
+      {
+    server.sendHeader("Connection", "close");
+    if (Update.hasError())
+    {
+      server.send(500, "text/plain", Update.errorString());
+    }
+    else
+    {
+      server.send(200, "text/plain", "update done");
+      ESP.restart();
+    } },
+      []()
+      {
+        HTTPUpload &upload = server.upload();
+
+        switch (upload.status)
+        {
+        case UPLOAD_FILE_START:
+          Update.begin();
+          break;
+
+        case UPLOAD_FILE_WRITE:
+          Update.write(upload.buf, upload.currentSize);
+          break;
+
+        case UPLOAD_FILE_END:
+          if (Update.end(true))
+            Serial.printf("written %u / Restart", upload.totalSize);
+          else
+            Update.printError(Serial);
+          break;
+
+        case UPLOAD_FILE_ABORTED:
+          Update.abort();
+          break;
+        }
+      });
+  server.on("/firmware", HTTP_GET, []()
+            { server.send(405, "Method Not Allowed"); });
 
   bool active = false;
 
