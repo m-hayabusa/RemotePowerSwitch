@@ -259,10 +259,8 @@ void httpServer(void *pvParameters)
       server.send(405, "text/plain", "GET Only");
       return;
     }
-
-    server.send(200, "text/html",
-#include "index.html"
-    ); });
+#include "index.html.cpp"
+    server.send(200, "text/html",INDEX_HTML); });
 
   server.on("/state", []()
             {

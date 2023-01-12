@@ -1,4 +1,4 @@
-R"(<html>
+<html>
 <meta charset="UTF-8">
 <script>
     let name, state;
@@ -25,9 +25,5 @@ R"(<html>
         if (prompt("FORCE POWER OFF? \nRetype host name: " + name).toUpperCase() == name.toUpperCase()) req("force-off"); else alert("?");
     }
 </script>
-host: <span id="host"></span><br>state: <span id="state"></span><br>
-password: <input id="p" type="password"></input><br>
-<button onclick='req("on")'>On</button>
-<button onclick='off()'>Off</button>
-<button onclick='force_off()'>FORCE Off</button>
-</html>)"
+
+</html>
