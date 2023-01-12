@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <style>
         body {
+            font-size: large;
             padding: 1em;
             color: rgb(224, 237, 249);
             background-color: rgb(0, 120, 231);
@@ -34,7 +35,7 @@
         }
 
         .info {
-            margin: 1em;
+            margin: 0 1em;
             display: grid;
             grid-template-columns: 1fr;
             row-gap: .2em;
@@ -42,7 +43,7 @@
 
         .info label {
             display: grid;
-            grid-template-columns: 1fr 2fr;
+            grid-template-columns: 1fr minmax(1em, 2fr);
         }
 
         .info label input {
@@ -81,7 +82,16 @@
 
         @media screen and (max-width: 32rem) {
             .buttons {
-                grid-template-columns: 1fr;
+                margin-top: 2em;
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .info label {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .info label span {
+                font-size: 0.75em;
             }
         }
     </style>
