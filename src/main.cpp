@@ -111,10 +111,10 @@ void SerialInput(void *pvParameters)
   }
 }
 
-const uint16_t sinTable[] = {0, 8, 16, 24, 32, 40, 48, 56, 64, 71, 79, 87, 94, 102, 109, 116, 123, 130, 137, 144, 150, 157, 163, 169, 175, 181, 187, 192, 197, 202, 207, 212, 216, 220, 224, 228, 232, 235, 238, 241, 243, 246, 248, 250, 251, 253, 254, 255, 255, 256, 256};
-
 void LedPwm(void *pvParameters)
 {
+  const uint16_t sinTable[] = {0, 8, 16, 24, 32, 40, 48, 56, 64, 71, 79, 87, 94, 102, 109, 116, 123, 130, 137, 144, 150, 157, 163, 169, 175, 181, 187, 192, 197, 202, 207, 212, 216, 220, 224, 228, 232, 235, 238, 241, 243, 246, 248, 250, 251, 253, 254, 255, 255, 256, 256};
+
   ledcSetup(0, 12800, 8);
   ledcAttachPin(PIN_PWRLED_CASE, 0);
   ledcSetup(1, 12800, 8);
@@ -244,8 +244,6 @@ void PwrControl(void *pvParameters)
   }
 }
 
-static WebServer server(80);
-
 void httpServer(void *pvParameters)
 {
   Serial.println("httpServer");
@@ -254,19 +252,21 @@ void httpServer(void *pvParameters)
   WiFi.setAutoReconnect(true);
   WiFi.begin(Config.getString("WIFI.SSID").c_str(), Config.getString("WIFI.PASSWORD").c_str());
 
-  server.on("/", []()
-            {
-    if (server.method() != HTTPMethod::HTTP_GET) {
-      server.send(405, "text/plain", "GET Only");
+  WebServer *server = new WebServer(80);
+
+  server->on("/", [&server]()
+             {
+    if (server->method() != HTTPMethod::HTTP_GET) {
+      server->send(405, "text/plain", "GET Only");
       return;
     }
 #include "index.html.cpp"
-    server.send(200, "text/html",INDEX_HTML); });
+    server->send(200, "text/html",INDEX_HTML); });
 
-  server.on("/state", []()
-            {
-    if (server.method() != HTTPMethod::HTTP_GET) {
-      server.send(405, "text/plain", "GET Only");
+  server->on("/state", [&server]()
+             {
+    if (server->method() != HTTPMethod::HTTP_GET) {
+      server->send(405, "text/plain", "GET Only");
       return;
     }
     String result = "{\"state\":\"";
@@ -283,103 +283,103 @@ void httpServer(void *pvParameters)
     }
     result += "\"}";
 
-    server.send(200, "application/json", result); });
+    server->send(200, "application/json", result); });
 
-  server.on("/name", []()
-            {
-    if (server.method() != HTTPMethod::HTTP_GET) {
-      server.send(405, "text/plain", "GET or POST");
+  server->on("/name", [&server]()
+             {
+    if (server->method() != HTTPMethod::HTTP_GET) {
+      server->send(405, "text/plain", "GET or POST");
     }
     String result = "{\"name\":\"";
     result += Config.getString("WEB.HOSTNAME");
     result += "\"}";
-    server.send(200, "application/json", result);
+    server->send(200, "application/json", result);
     return; });
 
-  server.on("/on", []()
-            {
-    if (server.method() != HTTPMethod::HTTP_POST) {
-      server.send(405, "text/plain", "POST Only");
+  server->on("/on", [&server]()
+             {
+    if (server->method() != HTTPMethod::HTTP_POST) {
+      server->send(405, "text/plain", "POST Only");
       return;
     }
-    if (!server.authenticate(Config.getString("WEB.HOSTNAME").c_str(), Config.getString("WEB.PASSWORD").c_str())) {
-      server.send(401, "text/plain", "not authorized");
+    if (!server->authenticate(Config.getString("WEB.HOSTNAME").c_str(), Config.getString("WEB.PASSWORD").c_str())) {
+      server->send(401, "text/plain", "not authorized");
       return;
     }
     if (powerState != PowerState::On) {
-      server.send(202, "text/plain", "triggered");
+      server->send(202, "text/plain", "triggered");
       powerctl = true;
       digitalWrite(PIN_PWRBTN_MB, true);
       delay(100);
       digitalWrite(PIN_PWRBTN_MB, false);
       powerctl = false;
     } else {
-      server.send(409, "text/plain", "already on");
+      server->send(409, "text/plain", "already on");
     } });
 
-  server.on("/off", []()
-            {
-    if (server.method() != HTTPMethod::HTTP_POST) {
-      server.send(405, "text/plain", "POST Only");
+  server->on("/off", [&server]()
+             {
+    if (server->method() != HTTPMethod::HTTP_POST) {
+      server->send(405, "text/plain", "POST Only");
       return;
     }
-    if (!server.authenticate(Config.getString("WEB.HOSTNAME").c_str(), Config.getString("WEB.PASSWORD").c_str())) {
-      server.send(401, "text/plain", "not authorized");
+    if (!server->authenticate(Config.getString("WEB.HOSTNAME").c_str(), Config.getString("WEB.PASSWORD").c_str())) {
+      server->send(401, "text/plain", "not authorized");
       return;
     }
     if (powerState == PowerState::On) {
-      server.send(202, "text/plain", "triggered");
+      server->send(202, "text/plain", "triggered");
       powerctl = true;
       digitalWrite(PIN_PWRBTN_MB, true);
       delay(100);
       digitalWrite(PIN_PWRBTN_MB, false);
       powerctl = false;
     } else {
-      server.send(409, "text/plain", "already off");
+      server->send(409, "text/plain", "already off");
     } });
 
-  server.on("/force-off", []()
-            {
-    if (server.method() != HTTPMethod::HTTP_POST) {
-      server.send(405, "text/plain", "POST Only");
+  server->on("/force-off", [&server]()
+             {
+    if (server->method() != HTTPMethod::HTTP_POST) {
+      server->send(405, "text/plain", "POST Only");
       return;
     }
-    if (!server.authenticate(Config.getString("WEB.HOSTNAME").c_str(), Config.getString("WEB.PASSWORD").c_str())) {
-      server.send(401, "text/plain", "not authorized");
+    if (!server->authenticate(Config.getString("WEB.HOSTNAME").c_str(), Config.getString("WEB.PASSWORD").c_str())) {
+      server->send(401, "text/plain", "not authorized");
       return;
     }
     if (powerState != PowerState::Off) {
-      server.send(202, "text/plain", "force power off");
+      server->send(202, "text/plain", "force power off");
       powerctl = true;
       digitalWrite(PIN_PWRBTN_MB, true);
       delay(5000);
       digitalWrite(PIN_PWRBTN_MB, false);
       powerctl = false;
     } else {
-      server.send(409, "text/plain", "already off");
+      server->send(409, "text/plain", "already off");
     } });
 
-  server.on("/update", HTTP_GET, []()
-            {
+  server->on("/update", HTTP_GET, [&server]()
+             {
 #include "update.html.cpp"
-        server.send(200, "text/html", UPDATE_HTML); });
+        server->send(200, "text/html", UPDATE_HTML); });
   // OTA Update
-  server.on(
-      "/firmware", HTTP_POST, []()
+  server->on(
+      "/firmware", HTTP_POST, [&server]()
       {
-    server.sendHeader("Connection", "close");
+    server->sendHeader("Connection", "close");
     if (Update.hasError())
     {
-      server.send(500, "text/plain", Update.errorString());
+      server->send(500, "text/plain", Update.errorString());
     }
     else
     {
-      server.send(200, "text/plain", "update done");
+      server->send(200, "text/plain", "update done");
       ESP.restart();
     } },
-      []()
+      [&server]()
       {
-        HTTPUpload &upload = server.upload();
+        HTTPUpload &upload = server->upload();
 
         switch (upload.status)
         {
@@ -403,8 +403,8 @@ void httpServer(void *pvParameters)
           break;
         }
       });
-  server.on("/firmware", HTTP_GET, []()
-            { server.send(405, "Method Not Allowed"); });
+  server->on("/firmware", HTTP_GET, [&server]()
+             { server->send(405, "Method Not Allowed"); });
 
   bool active = false;
 
@@ -414,11 +414,11 @@ void httpServer(void *pvParameters)
     {
       if (active)
       {
-        server.handleClient();
+        server->handleClient();
       }
       else
       {
-        server.begin();
+        server->begin();
         MDNS.begin(Config.getString("WEB.HOSTNAME", "RemotePowerButton").c_str());
         MDNS.addService("http", "tcp", 80);
         active = true;
@@ -426,7 +426,7 @@ void httpServer(void *pvParameters)
     }
     else if (active)
     {
-      server.close();
+      server->close();
       MDNS.end();
       active = false;
     }
