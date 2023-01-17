@@ -41,10 +41,10 @@ void setup()
   Serial.begin(9600);
   Serial.println("hello");
 
-  pinMode(PIN_PWRLED_MB, OUTPUT);
-  pinMode(PIN_HDDLED_MB, OUTPUT);
-  pinMode(PIN_PWRBTN_MB, INPUT_PULLUP);
-  pinMode(PIN_RSTBTN_MB, INPUT_PULLUP);
+  pinMode(PIN_PWRLED_CASE, OUTPUT);
+  pinMode(PIN_HDDLED_CASE, OUTPUT);
+  pinMode(PIN_PWRBTN_CASE, INPUT_PULLUP);
+  pinMode(PIN_RSTBTN_CASE, INPUT_PULLUP);
 
   pinMode(PIN_PWRLED_MB, INPUT_PULLUP);
   pinMode(PIN_HDDLED_MB, INPUT_PULLUP);
