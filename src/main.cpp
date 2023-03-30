@@ -38,7 +38,7 @@ void SerialInput(void *pvParameters);
 
 void setup()
 {
-  Serial.begin(9600);
+  Serial.begin(115200);
   Serial.println("hello");
 
   pinMode(PIN_PWRLED_CASE, OUTPUT);
