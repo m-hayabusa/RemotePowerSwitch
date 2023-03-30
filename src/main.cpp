@@ -16,9 +16,9 @@
 
 TaskHandle_t taskHandle[7];
 
-static bool pwrLedState = false;
-static bool hddLedState = false;
-static bool powerctl = false;
+bool pwrLedState = false;
+bool hddLedState = false;
+bool powerctl = false;
 
 enum class PowerState
 {
@@ -26,8 +26,8 @@ enum class PowerState
   On,
   Sleep
 };
-static PowerState powerState = PowerState::Off;
-static Preferences Config;
+PowerState powerState = PowerState::Off;
+Preferences Config;
 
 void httpServer(void *pvParameters);
 void PwrLedControl(void *pvParameters);
