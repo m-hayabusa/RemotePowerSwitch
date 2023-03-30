@@ -113,8 +113,6 @@ void SerialInput(void *pvParameters)
 
 void LedPwm(void *pvParameters)
 {
-  const uint16_t sinTable[] = {0, 8, 16, 24, 32, 40, 48, 56, 64, 71, 79, 87, 94, 102, 109, 116, 123, 130, 137, 144, 150, 157, 163, 169, 175, 181, 187, 192, 197, 202, 207, 212, 216, 220, 224, 228, 232, 235, 238, 241, 243, 246, 248, 250, 251, 253, 254, 255, 255, 256, 256};
-
   ledcSetup(0, 12800, 8);
   ledcAttachPin(PIN_PWRLED_CASE, 0);
   ledcSetup(1, 12800, 8);
@@ -122,42 +120,35 @@ void LedPwm(void *pvParameters)
 
   int pwrlevel = 0;
   int hddlevel = 0;
+
   while (1)
   {
-    if (pwrLedState && pwrlevel < 49)
-    {
-      pwrlevel++;
-      ledcWrite(0, sinTable[pwrlevel]);
-    }
-    else if (!pwrLedState && pwrlevel >= 2)
-    {
-      pwrlevel -= 2;
-      ledcWrite(0, sinTable[pwrlevel]);
-    }
-    else if (!pwrLedState && pwrlevel == 1)
-    {
+    if (pwrLedState)
+      pwrlevel += 24;
+    else
+      pwrlevel -= 16;
+
+    if (pwrlevel > 256)
+      pwrlevel = 256;
+    else if (pwrlevel < 0)
       pwrlevel = 0;
-      ledcWrite(0, sinTable[pwrlevel]);
-    }
+
+    ledcWrite(0, pwrlevel);
 
     int state = !digitalRead(PIN_HDDLED_MB);
-    if (state && hddlevel < 49)
-    {
-      hddlevel++;
-      ledcWrite(1, sinTable[hddlevel]);
-    }
-    else if (state && hddlevel >= 2)
-    {
-      hddlevel -= 2;
-      ledcWrite(1, sinTable[hddlevel]);
-    }
-    else if (state && hddlevel == 1)
-    {
-      hddlevel = 0;
-      ledcWrite(1, sinTable[hddlevel]);
-    }
+    if (state)
+      hddlevel += 32;
+    else
+      hddlevel -= 32;
 
-    delay(7);
+    if (hddlevel > 256)
+      hddlevel = 256;
+    else if (hddlevel < 0)
+      hddlevel = 0;
+
+    ledcWrite(1, hddlevel);
+
+    delay(20);
   }
 }
 
