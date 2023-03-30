@@ -106,10 +106,10 @@ void SerialInput(void *pvParameters)
       {
         Serial.println("> KEY:VALUE");
       }
+    }
       delay(100);
     }
   }
-}
 
 void LedPwm(void *pvParameters)
 {
