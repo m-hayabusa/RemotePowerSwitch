@@ -53,12 +53,12 @@ void setup()
 
   Config.begin("config");
 
-  xTaskCreatePinnedToCore(httpServer, "web", 8192, NULL, 20, &taskHandle[0], 1);
-  xTaskCreatePinnedToCore(PwrLedControl, "led", 1024, NULL, 10, &taskHandle[1], 0);
+  xTaskCreatePinnedToCore(httpServer, "web", 8192, NULL, 10, &taskHandle[0], 1);
+  xTaskCreatePinnedToCore(PwrLedControl, "led", 1024, NULL, 5, &taskHandle[1], 0);
   xTaskCreatePinnedToCore(PwrControl, "pwr", 1024, NULL, 15, &taskHandle[2], 0);
-  xTaskCreatePinnedToCore(LedPwm, "pwm", 1024, NULL, 0, &taskHandle[3], 0);
-  xTaskCreatePinnedToCore(PowerButton, "btn", 1024, NULL, 10, &taskHandle[4], 0);
-  xTaskCreatePinnedToCore(SerialInput, "ser", 4096, NULL, 0, &taskHandle[5], 0);
+  xTaskCreatePinnedToCore(LedPwm, "pwm", 1024, NULL, 6, &taskHandle[3], 0);
+  xTaskCreatePinnedToCore(PowerButton, "btn", 1024, NULL, 20, &taskHandle[4], 0);
+  xTaskCreatePinnedToCore(SerialInput, "ser", 4096, NULL, 0, &taskHandle[5], 1);
 
   Serial.println("nya");
 }
