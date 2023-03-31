@@ -65,51 +65,74 @@ void setup()
 
 void SerialInput(void *pvParameters)
 {
+  String raw = "";
+  Serial.setTimeout(1);
   while (1)
   {
-    if (Serial.available())
-    {
-      const String raw = Serial.readStringUntil('\n');
-      const int splitter = raw.indexOf(':');
+    delay(10);
 
-      if (splitter != -1)
+    if (Serial.available() > 0)
+    {
+      while (Serial.available() > 0)
       {
-        String name = raw.substring(0, splitter);
-        String data = raw.substring(splitter + 1);
-        if (name == "WIFI.SSID" || name == "WIFI.PASSWORD" || name == "WEB.PASSWORD" || name == "WEB.HOSTNAME")
+        char c = Serial.read();
+
+        if (c == 0x08)
+          raw[raw.length() - 1] = 0;
+
+        Serial.print(c);
+        raw += c;
+      }
+
+      const int nl = raw.indexOf('\n');
+
+      if (nl != -1)
+      {
+        const String line = raw.substring(0, nl);
+        Serial.println(line);
+        raw = raw.substring(nl + 1);
+
+        const int splitter = line.indexOf(':');
+
+        if (splitter != -1)
         {
-          Config.putString(name.c_str(), data);
-          Serial.println(name + ":" + data + ", saved");
-          if (name == "WIFI.SSID" || name == "WIFI.PASSWORD")
+          String name = line.substring(0, splitter);
+          String data = line.substring(splitter + 1);
+          Serial.println(name + " : " + data);
+          if (name == "WIFI.SSID" || name == "WIFI.PASSWORD" || name == "WEB.PASSWORD" || name == "WEB.HOSTNAME")
           {
-            WiFi.disconnect();
-            WiFi.begin(Config.getString("WIFI.SSID").c_str(), Config.getString("WIFI.PASSWORD").c_str());
+            Config.putString(name.c_str(), data);
+            Serial.println(name + ":" + Config.getString(name.c_str()) + ", saved");
+            if (name == "WIFI.SSID" || name == "WIFI.PASSWORD")
+            {
+              WiFi.disconnect();
+              WiFi.begin(Config.getString("WIFI.SSID").c_str(), Config.getString("WIFI.PASSWORD").c_str());
+            }
+            else if (name == "WEB.HOSTNAME")
+            {
+              MDNS.end();
+              delay(100);
+              MDNS.begin(Config.getString("WEB.HOSTNAME", "RemotePowerButton").c_str());
+              MDNS.addService("http", "tcp", 80);
+            }
           }
-          else if (name == "WEB.HOSTNAME")
+          else
           {
-            MDNS.end();
-            delay(100);
-            MDNS.begin(Config.getString("WEB.HOSTNAME", "RemotePowerButton").c_str());
-            MDNS.addService("http", "tcp", 80);
+            Serial.println(name + " is not in list");
           }
+        }
+        else if (line == "WIFI.SSID" || line == "WIFI.PASSWORD" || line == "WEB.PASSWORD" || line == "WEB.HOSTNAME")
+        {
+          Serial.println(line + ":" + Config.getString(line.c_str()));
         }
         else
         {
-          Serial.println(name + " is not in list");
+          Serial.println("> KEY:VALUE");
         }
       }
-      else if (raw == "WIFI.SSID" || raw == "WIFI.PASSWORD" || raw == "WEB.PASSWORD" || raw == "WEB.HOSTNAME")
-      {
-        Serial.println(raw + ":" + Config.getString(raw.c_str()));
-      }
-      else
-      {
-        Serial.println("> KEY:VALUE");
-      }
-    }
-      delay(100);
     }
   }
+}
 
 void LedPwm(void *pvParameters)
 {
