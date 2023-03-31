@@ -113,7 +113,7 @@
     <script>
         function reloadState() {
             const state = document.getElementById("state");
-            fetch("/state").then(async (r) => {
+            fetch("state").then(async (r) => {
                 state.value = (await r.json()).state;
             }).catch(e => {
                 state.value = e;
@@ -122,14 +122,14 @@
         setInterval(reloadState, 5000);
         reloadState();
         let name;
-        fetch("/name").then(async (r) => {
+        fetch("name").then(async (r) => {
             name = (await r.json()).name;
             document.getElementById("host").value = name;
         });
         function req(target, btn) {
             btn.setAttribute("disabled", "");
             state.value = "...";
-            fetch("/" + target, { method: "POST", headers: { "Authorization": `Basic ${btoa(name + ":" + document.getElementById("p").value)}` } }).then(
+            fetch(target, { method: "POST", headers: { "Authorization": `Basic ${btoa(name + ":" + document.getElementById("p").value)}` } }).then(
                 async r => { setTxt(btn, await r.text()); reloadState(); }
             ).catch(e => setTxt(btn, e))
         }
