@@ -220,16 +220,67 @@ void PwrControl(void *pvParameters) {
   }
 }
 
+WebServer *server;
+
 void httpServer(void *pvParameters) {
   Serial.println("httpServer");
 
   WiFi.mode(WIFI_MODE_STA);
   WiFi.setAutoReconnect(true);
+  WiFi.enableIpV6();
+
+  server = new WebServer(80);
+
+  WiFi.onEvent([](WiFiEvent_t event) {
+    switch (event) {
+      case ARDUINO_EVENT_WIFI_READY:
+        Serial.println("WiFi interface ready");
+        break;
+      case ARDUINO_EVENT_WIFI_STA_START:
+        Serial.println("WiFi client started");
+        break;
+      case ARDUINO_EVENT_WIFI_STA_STOP:
+        Serial.println("WiFi clients stopped");
+        break;
+      case ARDUINO_EVENT_WIFI_STA_CONNECTED:
+        Serial.println("Connected to access point");
+        break;
+      case ARDUINO_EVENT_WIFI_STA_DISCONNECTED:
+        server->close();
+        MDNS.end();
+        Serial.println("Disconnected from WiFi access point");
+        delay(1000);
+        WiFi.reconnect();
+        break;
+      case ARDUINO_EVENT_WIFI_STA_GOT_IP:
+        server->begin();
+        MDNS.begin(Config.getString("WEB.HOSTNAME", "RemotePowerButton").c_str());
+        MDNS.addService("http", "tcp", 80);
+        Serial.print("Obtained IP address: ");
+        Serial.println(WiFi.localIP());
+        break;
+      case ARDUINO_EVENT_WIFI_STA_GOT_IP6:
+        server->begin();
+        MDNS.begin(Config.getString("WEB.HOSTNAME", "RemotePowerButton").c_str());
+        MDNS.addService("http", "tcp", 80);
+        Serial.println("STA IPv6 is preferred");
+        Serial.println(WiFi.localIPv6());
+        break;
+      case ARDUINO_EVENT_WIFI_STA_LOST_IP:
+        server->close();
+        MDNS.end();
+        Serial.println("Lost IP address and IP address is reset to 0");
+        delay(1000);
+        WiFi.reconnect();
+        break;
+      default:
+        break;
+    }
+  });
+
   WiFi.begin(Config.getString("WIFI.SSID").c_str(), Config.getString("WIFI.PASSWORD").c_str());
 
-  WebServer *server = new WebServer(80);
-
-  server->on("/", [&server]() {
+  server->on("/", []() {
     if (server->method() != HTTPMethod::HTTP_GET) {
       server->send(405, "text/plain", "GET Only");
       return;
@@ -238,7 +289,7 @@ void httpServer(void *pvParameters) {
     server->send(200, "text/html", INDEX_HTML);
   });
 
-  server->on("/state", [&server]() {
+  server->on("/state", []() {
     if (server->method() != HTTPMethod::HTTP_GET) {
       server->send(405, "text/plain", "GET Only");
       return;
@@ -260,7 +311,7 @@ void httpServer(void *pvParameters) {
     server->send(200, "application/json", result);
   });
 
-  server->on("/name", [&server]() {
+  server->on("/name", []() {
     if (server->method() != HTTPMethod::HTTP_GET) {
       server->send(405, "text/plain", "GET or POST");
     }
@@ -271,7 +322,7 @@ void httpServer(void *pvParameters) {
     return;
   });
 
-  server->on("/on", [&server]() {
+  server->on("/on", []() {
     if (server->method() != HTTPMethod::HTTP_POST) {
       server->send(405, "text/plain", "POST Only");
       return;
@@ -292,7 +343,7 @@ void httpServer(void *pvParameters) {
     }
   });
 
-  server->on("/off", [&server]() {
+  server->on("/off", []() {
     if (server->method() != HTTPMethod::HTTP_POST) {
       server->send(405, "text/plain", "POST Only");
       return;
@@ -313,7 +364,7 @@ void httpServer(void *pvParameters) {
     }
   });
 
-  server->on("/force-off", [&server]() {
+  server->on("/force-off", []() {
     if (server->method() != HTTPMethod::HTTP_POST) {
       server->send(405, "text/plain", "POST Only");
       return;
@@ -334,14 +385,14 @@ void httpServer(void *pvParameters) {
     }
   });
 
-  server->on("/update", HTTP_GET, [&server]() {
+  server->on("/update", HTTP_GET, []() {
 #include "update.html.cpp"
     server->send(200, "text/html", UPDATE_HTML);
   });
   // OTA Update
   server->on(
       "/firmware", HTTP_POST,
-      [&server]() {
+      []() {
         server->sendHeader("Connection", "close");
         if (Update.hasError()) {
           server->send(500, "text/plain", Update.errorString());
@@ -350,7 +401,7 @@ void httpServer(void *pvParameters) {
           ESP.restart();
         }
       },
-      [&server]() {
+      []() {
         HTTPUpload &upload = server->upload();
 
         switch (upload.status) {
@@ -374,26 +425,10 @@ void httpServer(void *pvParameters) {
             break;
         }
       });
-  server->on("/firmware", HTTP_GET, [&server]() { server->send(405, "Method Not Allowed"); });
-
-  bool active = false;
+  server->on("/firmware", HTTP_GET, []() { server->send(405, "Method Not Allowed"); });
 
   while (1) {
-    if (WiFi.isConnected()) {
-      if (active) {
-        server->handleClient();
-      } else {
-        server->begin();
-        MDNS.begin(Config.getString("WEB.HOSTNAME", "RemotePowerButton").c_str());
-        MDNS.addService("http", "tcp", 80);
-        active = true;
-      }
-    } else if (active) {
-      server->close();
-      MDNS.end();
-      active = false;
-    }
-
+    server->handleClient();
     delay(10);
   }
 }
