@@ -103,6 +103,8 @@ void SerialInput(void *pvParameters) {
           }
         } else if (line == "WIFI.SSID" || line == "WIFI.PASSWORD" || line == "WEB.PASSWORD" || line == "WEB.HOSTNAME") {
           Serial.println(line + ":" + Config.getString(line.c_str()));
+        } else if (line == "REBOOT") {
+          ESP.restart();
         } else {
           Serial.println("> KEY:VALUE");
         }
