@@ -249,7 +249,6 @@ void httpServer(void *pvParameters) {
         server->close();
         MDNS.end();
         Serial.println("Disconnected from WiFi access point");
-        delay(1000);
         WiFi.reconnect();
         break;
       case ARDUINO_EVENT_WIFI_STA_GOT_IP:
@@ -270,7 +269,6 @@ void httpServer(void *pvParameters) {
         server->close();
         MDNS.end();
         Serial.println("Lost IP address and IP address is reset to 0");
-        delay(1000);
         WiFi.reconnect();
         break;
       default:
