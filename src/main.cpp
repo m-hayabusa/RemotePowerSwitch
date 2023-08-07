@@ -67,6 +67,7 @@ void SerialInput(void *pvParameters) {
       while (Serial.available() > 0) {
         char c = Serial.read();
 
+        if (c == 0x0D) continue;
         if (c == 0x08) raw[raw.length() - 1] = 0;
 
         Serial.print(c);
