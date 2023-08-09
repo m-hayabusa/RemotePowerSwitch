@@ -8,139 +8,139 @@
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
-<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
-<layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
-<layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
-<layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
-<layer number="94" name="Symbols" color="4" fill="1" visible="no" active="no"/>
-<layer number="95" name="Names" color="7" fill="1" visible="no" active="no"/>
-<layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
-<layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
-<layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
-<layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
-<layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
-<layer number="101" name="Patch_Top" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="108" name="tplace-old" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="109" name="ref-old" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="113" name="IDFDebug" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="114" name="Badge_Outline" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="116" name="Patch_BOT" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="200" name="200bmp" color="7" fill="10" visible="yes" active="yes"/>
-<layer number="201" name="201bmp" color="7" fill="10" visible="yes" active="yes"/>
-<layer number="202" name="202bmp" color="7" fill="10" visible="yes" active="yes"/>
-<layer number="203" name="203bmp" color="7" fill="10" visible="yes" active="yes"/>
-<layer number="204" name="204bmp" color="7" fill="10" visible="yes" active="yes"/>
-<layer number="205" name="205bmp" color="7" fill="10" visible="yes" active="yes"/>
-<layer number="206" name="206bmp" color="7" fill="10" visible="yes" active="yes"/>
-<layer number="207" name="207bmp" color="7" fill="10" visible="yes" active="yes"/>
-<layer number="208" name="208bmp" color="7" fill="10" visible="yes" active="yes"/>
-<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="217" name="217bmp" color="7" fill="1" visible="no" active="no"/>
-<layer number="218" name="218bmp" color="7" fill="1" visible="no" active="no"/>
-<layer number="219" name="219bmp" color="7" fill="1" visible="no" active="no"/>
-<layer number="220" name="220bmp" color="7" fill="1" visible="no" active="no"/>
-<layer number="221" name="221bmp" color="7" fill="1" visible="no" active="no"/>
-<layer number="222" name="222bmp" color="7" fill="1" visible="no" active="no"/>
-<layer number="223" name="223bmp" color="7" fill="1" visible="no" active="no"/>
-<layer number="224" name="224bmp" color="7" fill="1" visible="no" active="no"/>
-<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="250" name="Descript" color="7" fill="1" visible="no" active="no"/>
-<layer number="251" name="SMDround" color="7" fill="11" visible="no" active="no"/>
-<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" blackcolor="0xc8ff4164" whitecolor="0xccc90d0c" coloredcolor="0xccc90d0c" blackhighlight="0xffff5147" whitehighlight="0xffff4102" coloredhighlight="0xffff4102" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="16" name="Bottom" blackcolor="0xc80696d7" whitecolor="0xcc0696d7" coloredcolor="0xcc0696d7" blackhighlight="0xff147eff" whitehighlight="0xff147eff" coloredhighlight="0xff147eff" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="17" name="Pads" blackcolor="0xb462d987" whitecolor="0xb462d987" coloredcolor="0xcc0dab76" blackhighlight="0xff17ff96" whitehighlight="0xff17ff96" coloredhighlight="0xff00dbc5" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="18" name="Vias" blackcolor="0xb462d987" whitecolor="0xb462d987" coloredcolor="0xccffcd07" blackhighlight="0xff17ff96" whitehighlight="0xff17ff96" coloredhighlight="0xfff9ff47" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="19" name="Unrouted" blackcolor="0xccd9d9d9" whitecolor="0xbbc8c832" coloredcolor="0xbbc8c832" blackhighlight="0xccffffff" whitehighlight="0xffc0ff01" coloredhighlight="0xffc0ff01" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="20" name="Dimension" blackcolor="0xb462d986" whitecolor="0xb462d986" coloredcolor="0xcceec643" blackhighlight="0xff17ff96" whitehighlight="0xff17ff96" coloredhighlight="0xffffff32" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="21" name="tPlace" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccffffff" whitehighlight="0xbba4a4a4" coloredhighlight="0xbba4a4a4" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="22" name="bPlace" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccffffff" whitehighlight="0xbba4a4a4" coloredhighlight="0xbba4a4a4" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="23" name="tOrigins" blackcolor="0xc8ffffff" whitecolor="0xccafd134" coloredcolor="0xccafd134" blackhighlight="0xc8ffffff" whitehighlight="0xff92ff0d" coloredhighlight="0xff92ff0d" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="24" name="bOrigins" blackcolor="0xc8ffffff" whitecolor="0xccafd134" coloredcolor="0xccafd134" blackhighlight="0xc8ffffff" whitehighlight="0xff92ff0d" coloredhighlight="0xff92ff0d" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="25" name="tNames" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccffffff" whitehighlight="0xbba4a4a4" coloredhighlight="0xbba4a4a4" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="26" name="bNames" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccffffff" whitehighlight="0xbba4a4a4" coloredhighlight="0xbba4a4a4" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="27" name="tValues" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccffffff" whitehighlight="0xbba4a4a4" coloredhighlight="0xbba4a4a4" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="28" name="bValues" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccffffff" whitehighlight="0xbba4a4a4" coloredhighlight="0xbba4a4a4" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="29" name="tStop" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccffffff" whitehighlight="0xbba4a4a4" coloredhighlight="0xbba4a4a4" fill="3" visible="yes" active="yes" locked="no"/>
+<layer number="30" name="bStop" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccffffff" whitehighlight="0xbba4a4a4" coloredhighlight="0xbba4a4a4" fill="6" visible="yes" active="yes" locked="no"/>
+<layer number="31" name="tCream" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccffffff" whitehighlight="0xbba4a4a4" coloredhighlight="0xbba4a4a4" fill="4" visible="yes" active="yes" locked="no"/>
+<layer number="32" name="bCream" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccffffff" whitehighlight="0xbba4a4a4" coloredhighlight="0xbba4a4a4" fill="5" visible="yes" active="yes" locked="no"/>
+<layer number="33" name="tFinish" blackcolor="0xccd9d9d9" whitecolor="0xbbc8c832" coloredcolor="0xbbc8c832" blackhighlight="0xccffffff" whitehighlight="0xffc0ff01" coloredhighlight="0xffc0ff01" fill="3" visible="yes" active="yes" locked="no"/>
+<layer number="34" name="bFinish" blackcolor="0xccd9d9d9" whitecolor="0xbbc8c832" coloredcolor="0xbbc8c832" blackhighlight="0xccffffff" whitehighlight="0xffc0ff01" coloredhighlight="0xffc0ff01" fill="6" visible="yes" active="yes" locked="no"/>
+<layer number="35" name="tGlue" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccffffff" whitehighlight="0xbba4a4a4" coloredhighlight="0xbba4a4a4" fill="4" visible="yes" active="yes" locked="no"/>
+<layer number="36" name="bGlue" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccffffff" whitehighlight="0xbba4a4a4" coloredhighlight="0xbba4a4a4" fill="5" visible="yes" active="yes" locked="no"/>
+<layer number="37" name="tTest" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccffffff" whitehighlight="0xbba4a4a4" coloredhighlight="0xbba4a4a4" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="38" name="bTest" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccffffff" whitehighlight="0xbba4a4a4" coloredhighlight="0xbba4a4a4" fill="1" visible="no" active="yes" locked="no"/>
+<layer number="39" name="tKeepout" blackcolor="0xc8ff4164" whitecolor="0xccc90d0c" coloredcolor="0xccc90d0c" blackhighlight="0xffff5147" whitehighlight="0xffff4102" coloredhighlight="0xffff4102" fill="11" visible="yes" active="yes" locked="no"/>
+<layer number="40" name="bKeepout" blackcolor="0xc80696d7" whitecolor="0xcc0696d7" coloredcolor="0xcc0696d7" blackhighlight="0xff147eff" whitehighlight="0xff147eff" coloredhighlight="0xff147eff" fill="11" visible="yes" active="yes" locked="no"/>
+<layer number="41" name="tRestrict" blackcolor="0xc8ff4164" whitecolor="0xccc90d0c" coloredcolor="0xccc90d0c" blackhighlight="0xffff5147" whitehighlight="0xffff4102" coloredhighlight="0xffff4102" fill="10" visible="yes" active="yes" locked="no"/>
+<layer number="42" name="bRestrict" blackcolor="0xc80696d7" whitecolor="0xcc0696d7" coloredcolor="0xcc0696d7" blackhighlight="0xff147eff" whitehighlight="0xff147eff" coloredhighlight="0xff147eff" fill="10" visible="yes" active="yes" locked="no"/>
+<layer number="43" name="vRestrict" blackcolor="0xb462d987" whitecolor="0xb462d987" coloredcolor="0xcc0dab76" blackhighlight="0xff17ff96" whitehighlight="0xff17ff96" coloredhighlight="0xff00dbc5" fill="10" visible="yes" active="yes" locked="no"/>
+<layer number="44" name="Drills" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccffffff" whitehighlight="0xbba4a4a4" coloredhighlight="0xbba4a4a4" fill="1" visible="no" active="yes" locked="no"/>
+<layer number="45" name="Holes" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccffffff" whitehighlight="0xbba4a4a4" coloredhighlight="0xbba4a4a4" fill="1" visible="no" active="yes" locked="no"/>
+<layer number="46" name="Milling" blackcolor="0xcc32c8c8" whitecolor="0xb432c8c8" coloredcolor="0xb432c8c8" blackhighlight="0xff01c0ff" whitehighlight="0xff01c0ff" coloredhighlight="0xff01c0ff" fill="1" visible="no" active="yes" locked="no"/>
+<layer number="47" name="Measures" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccffffff" whitehighlight="0xbba4a4a4" coloredhighlight="0xbba4a4a4" fill="1" visible="no" active="yes" locked="no"/>
+<layer number="48" name="Document" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccffffff" whitehighlight="0xbba4a4a4" coloredhighlight="0xbba4a4a4" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="49" name="Reference" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccffffff" whitehighlight="0xbba4a4a4" coloredhighlight="0xbba4a4a4" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="50" name="dxf" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no" locked="no"/>
+<layer number="51" name="tDocu" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccffffff" whitehighlight="0xbba4a4a4" coloredhighlight="0xbba4a4a4" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="52" name="bDocu" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccffffff" whitehighlight="0xbba4a4a4" coloredhighlight="0xbba4a4a4" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="53" name="tGND_GNDA" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="9" visible="no" active="no" locked="no"/>
+<layer number="54" name="bGND_GNDA" blackcolor="0xc80696d7" whitecolor="0xcc0696d7" coloredcolor="0xcc0696d7" blackhighlight="0xb40000ff" whitehighlight="0xcc8252c2" coloredhighlight="0xcc8252c2" fill="9" visible="no" active="no" locked="no"/>
+<layer number="56" name="wert" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no" locked="no"/>
+<layer number="57" name="tCAD" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no" locked="no"/>
+<layer number="59" name="tCarbon" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no" locked="no"/>
+<layer number="60" name="bCarbon" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no" locked="no"/>
+<layer number="88" name="SimResults" blackcolor="0xb4815cc2" whitecolor="0xb4815cc2" coloredcolor="0xc8fdc689" blackhighlight="0xff9500f8" whitehighlight="0xff9500f8" coloredhighlight="0xffffd445" fill="1" visible="no" active="no" locked="no"/>
+<layer number="89" name="SimProbes" blackcolor="0xb4815cc2" whitecolor="0xb4815cc2" coloredcolor="0xc8fdc689" blackhighlight="0xff9500f8" whitehighlight="0xff9500f8" coloredhighlight="0xffffd445" fill="1" visible="no" active="no" locked="no"/>
+<layer number="90" name="Modules" blackcolor="0xdcfac36e" whitecolor="0xdcf57c10" coloredcolor="0xc8d9ff3d" blackhighlight="0xffffe341" whitehighlight="0xffffc73b" coloredhighlight="0xffafff47" fill="1" visible="no" active="no" locked="no"/>
+<layer number="91" name="Nets" blackcolor="0xdc009292" whitecolor="0xdc009292" coloredcolor="0xc8e3e3e3" blackhighlight="0xff008cbb" whitehighlight="0xff008cbb" coloredhighlight="0xc8ffffff" fill="1" visible="no" active="no" locked="no"/>
+<layer number="92" name="Busses" blackcolor="0xdc009292" whitecolor="0xdc009292" coloredcolor="0xc8d62525" blackhighlight="0xff008cbb" whitehighlight="0xff008cbb" coloredhighlight="0xffff4e13" fill="1" visible="no" active="no" locked="no"/>
+<layer number="93" name="Pins" blackcolor="0xdcbbbbbb" whitecolor="0xdcbbbbbb" coloredcolor="0xc839d437" blackhighlight="0xdcefefef" whitehighlight="0xdcefefef" coloredhighlight="0xff10ff48" fill="1" visible="no" active="no" locked="no"/>
+<layer number="94" name="Symbols" blackcolor="0xdcfac36e" whitecolor="0xdcf57c10" coloredcolor="0xc8e6e600" blackhighlight="0xffffe341" whitehighlight="0xffffc73b" coloredhighlight="0xffc9ff27" fill="1" visible="no" active="no" locked="no"/>
+<layer number="95" name="Names" blackcolor="0xf0b2b2b2" whitecolor="0xc8757575" coloredcolor="0xc82c7bce" blackhighlight="0xf0e4e4e4" whitehighlight="0xc8969696" coloredhighlight="0xff0946ff" fill="1" visible="no" active="no" locked="no"/>
+<layer number="96" name="Values" blackcolor="0xf0b2b2b2" whitecolor="0xc8757575" coloredcolor="0xc82c7bce" blackhighlight="0xf0e4e4e4" whitehighlight="0xc8969696" coloredhighlight="0xff0946ff" fill="1" visible="no" active="no" locked="no"/>
+<layer number="97" name="Info" blackcolor="0xf0b2b2b2" whitecolor="0xc8757575" coloredcolor="0xc89526de" blackhighlight="0xf0e4e4e4" whitehighlight="0xc8969696" coloredhighlight="0xffdd1dff" fill="1" visible="no" active="no" locked="no"/>
+<layer number="98" name="Guide" blackcolor="0xf0b2b2b2" whitecolor="0xc8757575" coloredcolor="0xc89526de" blackhighlight="0xf0e4e4e4" whitehighlight="0xc8969696" coloredhighlight="0xffdd1dff" fill="1" visible="no" active="no" locked="no"/>
+<layer number="99" name="SpiceOrder" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no" locked="no"/>
+<layer number="100" name="Muster" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no" locked="no"/>
+<layer number="101" name="Patch_Top" blackcolor="0xccff0000" whitecolor="0xb4ff0000" coloredcolor="0xb4ff0000" blackhighlight="0xccff0000" whitehighlight="0xb4ff0000" coloredhighlight="0xb4ff0000" fill="4" visible="yes" active="yes" locked="no"/>
+<layer number="102" name="Vscore" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="103" name="tMap" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="104" name="Name" blackcolor="0xc800bfbf" whitecolor="0xc800bfbf" coloredcolor="0xccffe74c" blackhighlight="0xb462d986" whitehighlight="0xb462d986" coloredhighlight="0xcceec643" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="105" name="tPlate" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="106" name="bPlate" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="107" name="Crop" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="108" name="tplace-old" blackcolor="0xb400ff00" whitecolor="0xb400ff00" coloredcolor="0xb400ff00" blackhighlight="0xb400ff00" whitehighlight="0xb400ff00" coloredhighlight="0xb400ff00" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="109" name="ref-old" blackcolor="0xb400ffff" whitecolor="0xb400ffff" coloredcolor="0xb400ffff" blackhighlight="0xb400ffff" whitehighlight="0xb400ffff" coloredhighlight="0xb400ffff" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="110" name="fp0" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="111" name="LPC17xx" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="112" name="tSilk" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="113" name="IDFDebug" blackcolor="0xc8ff4164" whitecolor="0xccc90d0c" coloredcolor="0xccc90d0c" blackhighlight="0xccff0000" whitehighlight="0xb4ff0000" coloredhighlight="0xb4ff0000" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="114" name="Badge_Outline" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="115" name="ReferenceISLANDS" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="116" name="Patch_BOT" blackcolor="0xb40000ff" whitecolor="0xcc8252c2" coloredcolor="0xcc8252c2" blackhighlight="0xb40000ff" whitehighlight="0xcc8252c2" coloredhighlight="0xcc8252c2" fill="4" visible="yes" active="yes" locked="no"/>
+<layer number="118" name="Rect_Pads" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="121" name="_tsilk" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="122" name="_bsilk" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="123" name="tTestmark" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="124" name="bTestmark" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="125" name="_tNames" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="126" name="_bNames" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="127" name="_tValues" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="128" name="_bValues" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="129" name="Mask" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="131" name="tAdjust" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="132" name="bAdjust" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="144" name="Drill_legend" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="150" name="Notes" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="151" name="HeatSink" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="152" name="_bDocu" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="153" name="FabDoc1" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="154" name="FabDoc2" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="155" name="FabDoc3" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="199" name="Contour" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="200" name="200bmp" blackcolor="0xc80696d7" whitecolor="0xcc0696d7" coloredcolor="0xcc0696d7" blackhighlight="0xb40000ff" whitehighlight="0xcc8252c2" coloredhighlight="0xcc8252c2" fill="10" visible="yes" active="yes" locked="no"/>
+<layer number="201" name="201bmp" blackcolor="0xb462d987" whitecolor="0xb462d987" coloredcolor="0xcc0dab76" blackhighlight="0xb400ff00" whitehighlight="0xb400ff00" coloredhighlight="0xb400ff00" fill="10" visible="yes" active="yes" locked="no"/>
+<layer number="202" name="202bmp" blackcolor="0xcc32c8c8" whitecolor="0xb432c8c8" coloredcolor="0xb432c8c8" blackhighlight="0xb400ffff" whitehighlight="0xb400ffff" coloredhighlight="0xb400ffff" fill="10" visible="yes" active="yes" locked="no"/>
+<layer number="203" name="203bmp" blackcolor="0xc8ff4164" whitecolor="0xccc90d0c" coloredcolor="0xccc90d0c" blackhighlight="0xccff0000" whitehighlight="0xb4ff0000" coloredhighlight="0xb4ff0000" fill="10" visible="yes" active="yes" locked="no"/>
+<layer number="204" name="204bmp" blackcolor="0xccffba08" whitecolor="0xccffba08" coloredcolor="0xccffba08" blackhighlight="0xccff00ff" whitehighlight="0xb4ff00ff" coloredhighlight="0xb4ff00ff" fill="10" visible="yes" active="yes" locked="no"/>
+<layer number="205" name="205bmp" blackcolor="0xccd9d9d9" whitecolor="0xbbc8c832" coloredcolor="0xbbc8c832" blackhighlight="0xb462d987" whitehighlight="0xb462d987" coloredhighlight="0xccffcd07" fill="10" visible="yes" active="yes" locked="no"/>
+<layer number="206" name="206bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="10" visible="yes" active="yes" locked="no"/>
+<layer number="207" name="207bmp" blackcolor="0xb4282828" whitecolor="0xb4282828" coloredcolor="0xb4282828" blackhighlight="0xb4282828" whitehighlight="0xb4282828" coloredhighlight="0xb4282828" fill="10" visible="yes" active="yes" locked="no"/>
+<layer number="208" name="208bmp" blackcolor="0xb40000ff" whitecolor="0xcc8252c2" coloredcolor="0xcc8252c2" blackhighlight="0xb40000ff" whitehighlight="0xcc8252c2" coloredhighlight="0xcc8252c2" fill="10" visible="yes" active="yes" locked="no"/>
+<layer number="209" name="209bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="210" name="210bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="211" name="211bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="212" name="212bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="213" name="213bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="214" name="214bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="215" name="215bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="216" name="216bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="217" name="217bmp" blackcolor="0xc89fc966" whitecolor="0xc89fc966" coloredcolor="0xccffdda1" blackhighlight="0xc8ff8cc6" whitehighlight="0xc8ff8cc6" coloredhighlight="0xcc6f45b4" fill="1" visible="no" active="no" locked="no"/>
+<layer number="218" name="218bmp" blackcolor="0xc8a7bacf" whitecolor="0xc8a7bacf" coloredcolor="0xcc5fad56" blackhighlight="0xc8f26a52" whitehighlight="0xc8f26a52" coloredhighlight="0xcc516363" fill="1" visible="no" active="no" locked="no"/>
+<layer number="219" name="219bmp" blackcolor="0xc8bb7a14" whitecolor="0xc8bb7a14" coloredcolor="0xcc00bfb2" blackhighlight="0xc89bd5ef" whitehighlight="0xc89bd5ef" coloredhighlight="0xccd6a2ad" fill="1" visible="no" active="no" locked="no"/>
+<layer number="220" name="220bmp" blackcolor="0xc8658d30" whitecolor="0xc8658d30" coloredcolor="0xcc65def1" blackhighlight="0xc8ffbeab" whitehighlight="0xc8ffbeab" coloredhighlight="0xccef476f" fill="1" visible="no" active="no" locked="no"/>
+<layer number="221" name="221bmp" blackcolor="0xc823a597" whitecolor="0xc823a597" coloredcolor="0xccc55ea3" blackhighlight="0xc8e8430f" whitehighlight="0xc8e8430f" coloredhighlight="0xccd4dcff" fill="1" visible="no" active="no" locked="no"/>
+<layer number="222" name="222bmp" blackcolor="0xc8a76ef5" whitecolor="0xc8a76ef5" coloredcolor="0xccf56416" blackhighlight="0xccafd134" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no" locked="no"/>
+<layer number="223" name="223bmp" blackcolor="0xb462d986" whitecolor="0xb462d986" coloredcolor="0xcceec643" blackhighlight="0xb462d986" whitehighlight="0xb462d986" coloredhighlight="0xcceec643" fill="1" visible="no" active="no" locked="no"/>
+<layer number="224" name="224bmp" blackcolor="0xc8c5a1f8" whitecolor="0xc8c5a1f8" coloredcolor="0xcc5e897c" blackhighlight="0xc8c5a1f8" whitehighlight="0xc8c5a1f8" coloredhighlight="0xcc5e897c" fill="1" visible="no" active="no" locked="no"/>
+<layer number="225" name="225bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="226" name="226bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="227" name="227bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="228" name="228bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="229" name="229bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="230" name="230bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="231" name="231bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="232" name="Eagle3D_PG2" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="233" name="Eagle3D_PG3" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="248" name="Housing" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="249" name="Edge" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="250" name="Descript" blackcolor="0xcc32c8c8" whitecolor="0xb432c8c8" coloredcolor="0xb432c8c8" blackhighlight="0xb400ffff" whitehighlight="0xb400ffff" coloredhighlight="0xb400ffff" fill="1" visible="no" active="no" locked="no"/>
+<layer number="251" name="SMDround" blackcolor="0xccff0000" whitecolor="0xb4ff0000" coloredcolor="0xb4ff0000" blackhighlight="0xccff0000" whitehighlight="0xb4ff0000" coloredhighlight="0xb4ff0000" fill="11" visible="no" active="no" locked="no"/>
+<layer number="254" name="cooling" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
+<layer number="255" name="routoute" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes" locked="no"/>
 </layers>
 <board>
 <plain>
@@ -158,7 +158,7 @@
 <libraries>
 <library name="M5Stamp" urn="urn:adsk.wipprod:fs.file:vf.ou1fjKsRR4GbaAYxFxS1Ww">
 <packages>
-<package name="M5STAMP_C3U_HEADER" library_version="7">
+<package name="M5STAMP_C3U_HEADER" library_version="7" use_placeholder="yes">
 <wire x1="-10" y1="15" x2="-10" y2="-19" width="0.1524" layer="21"/>
 <wire x1="-10" y1="-19" x2="10" y2="-19" width="0.1524" layer="21"/>
 <wire x1="10" y1="-19" x2="10" y2="15" width="0.1524" layer="21"/>
@@ -189,11 +189,18 @@
 <pad name="G3" x="-9" y="11.97" drill="0.85"/>
 </package>
 </packages>
+<packages3d>
+<package3d name="M5STAMP_C3U_HEADER" urn="" wip_urn="urn:adsk.wipprod:fs.file:vf.IvRPL1raTD6jQr_vITOtSw?version=1" type="model">
+<packageinstances>
+<packageinstance name="M5STAMP_C3U_HEADER"/>
+</packageinstances>
+</package3d>
+</packages3d>
 </library>
 <library name="Transistor" urn="urn:adsk.eagle:library:16378713">
 <description>&lt;B&gt;BJT, JFET, MOSFET, UJT, Darlington</description>
 <packages>
-<package name="SOT23" urn="urn:adsk.eagle:footprint:28669/1" library_version="8">
+<package name="SOT23" urn="urn:adsk.eagle:footprint:28669/1" library_version="8" use_placeholder="yes">
 <description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
 <wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
 <wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
@@ -221,7 +228,7 @@
 <library name="Resistor" urn="urn:adsk.eagle:library:16378527">
 <description>&lt;B&gt;Resistors, Potentiometers, TrimPot</description>
 <packages>
-<package name="RESC1608X60" urn="urn:adsk.eagle:footprint:16378537/2" library_version="11">
+<package name="RESC1608X60" urn="urn:adsk.eagle:footprint:16378537/2" library_version="11" use_placeholder="yes">
 <description>Chip, 1.60 X 0.82 X 0.60 mm body
 &lt;p&gt;Chip package with body size 1.60 X 0.82 X 0.60 mm&lt;/p&gt;</description>
 <wire x1="0.85" y1="0.8009" x2="-0.85" y2="0.8009" width="0.127" layer="21"/>
@@ -249,7 +256,7 @@
 <library name="Connector" urn="urn:adsk.eagle:library:16378166">
 <description>&lt;b&gt;Pin Headers,Terminal blocks, D-Sub, Backplane, FFC/FPC, Socket</description>
 <packages>
-<package name="2X05" urn="urn:adsk.eagle:footprint:22358/1" library_version="18">
+<package name="2X05" urn="urn:adsk.eagle:footprint:22358/1" library_version="18" use_placeholder="yes">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="-6.35" y1="-1.905" x2="-5.715" y2="-2.54" width="0.1524" layer="21"/>
 <wire x1="-4.445" y1="-2.54" x2="-3.81" y2="-1.905" width="0.1524" layer="21"/>
@@ -310,12 +317,98 @@
 <rectangle x1="4.826" y1="1.016" x2="5.334" y2="1.524" layer="51"/>
 <rectangle x1="4.826" y1="-1.524" x2="5.334" y2="-1.016" layer="51"/>
 </package>
+<package name="1X05" urn="urn:adsk.eagle:footprint:22354/1" library_version="18" use_placeholder="yes">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="1.27" x2="-4.445" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="1.27" x2="-3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="0.635" x2="-3.81" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="-0.635" x2="-4.445" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="0.635" x2="-3.175" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="1.27" x2="-1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-1.27" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="-1.27" x2="-3.81" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="0.635" x2="-6.35" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="1.27" x2="-6.35" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="-0.635" x2="-5.715" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="-1.27" x2="-5.715" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="5.715" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="6.35" y1="0.635" x2="6.35" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="6.35" y1="-0.635" x2="5.715" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="4.445" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="-1.27" x2="4.445" y2="-1.27" width="0.1524" layer="21"/>
+<pad name="1" x="-5.08" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="-2.54" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="0" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="4" x="2.54" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="5" x="5.08" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-6.4262" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-6.35" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
+<rectangle x1="-5.334" y1="-0.254" x2="-4.826" y2="0.254" layer="51"/>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="2X05" urn="urn:adsk.eagle:package:22470/2" type="model">
 <description>PIN HEADER</description>
 <packageinstances>
 <packageinstance name="2X05"/>
+</packageinstances>
+</package3d>
+<package3d name="1X05" urn="urn:adsk.eagle:package:22469/2" type="model">
+<description>PIN HEADER</description>
+<packageinstances>
+<packageinstance name="1X05"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
+<library name="Diode" urn="urn:adsk.eagle:library:16378169">
+<description>&lt;B&gt;PN Junction, BridgeRectifier, Zener, Schottky, Switching</description>
+<packages>
+<package name="SODFL3718X115" urn="urn:adsk.eagle:footprint:9427170/1" library_version="9" use_placeholder="yes">
+<description>SODFL, 3.70 mm span, 2.80 X 1.80 X 1.15 mm body
+&lt;p&gt;SODFL package with 3.70 mm span with body size 2.80 X 1.80 X 1.15 mm&lt;/p&gt;</description>
+<wire x1="1.45" y1="0.9946" x2="-2.4717" y2="0.9946" width="0.12" layer="21"/>
+<wire x1="-2.4717" y1="0.9946" x2="-2.4717" y2="-0.9946" width="0.12" layer="21"/>
+<wire x1="-2.4717" y1="-0.9946" x2="1.45" y2="-0.9946" width="0.12" layer="21"/>
+<wire x1="1.45" y1="-0.95" x2="-1.45" y2="-0.95" width="0.12" layer="51"/>
+<wire x1="-1.45" y1="-0.95" x2="-1.45" y2="0.95" width="0.12" layer="51"/>
+<wire x1="-1.45" y1="0.95" x2="1.45" y2="0.95" width="0.12" layer="51"/>
+<wire x1="1.45" y1="0.95" x2="1.45" y2="-0.95" width="0.12" layer="51"/>
+<smd name="1" x="-1.6004" y="0" dx="1.1146" dy="1.3612" layer="1"/>
+<smd name="2" x="1.6004" y="0" dx="1.1146" dy="1.3612" layer="1"/>
+<text x="0" y="1.6296" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.6296" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="SODFL3718X115" urn="urn:adsk.eagle:package:9427153/2" type="model">
+<description>SODFL, 3.70 mm span, 2.80 X 1.80 X 1.15 mm body
+&lt;p&gt;SODFL package with 3.70 mm span with body size 2.80 X 1.80 X 1.15 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SODFL3718X115"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -406,7 +499,6 @@ design rules under a new name.</description>
 <param name="slThermalIsolate" value="10mil"/>
 <param name="slThermalsForVias" value="0"/>
 <param name="checkAngle" value="0"/>
-<param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
 <param name="checkStop" value="0"/>
 <param name="checkValues" value="0"/>
@@ -415,7 +507,19 @@ design rules under a new name.</description>
 <param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
-</designrules>
+<layerstackup name="Default Layer Stack" type="Standard Stackup" display_unit="mic" roughness_model="0">
+ <layerdef type="Signal" id="{40aff1b4-d691-4226-a04c-999a02f5e1d6}" layer="1" name="Top" locally_modified_material="yes">
+ <material name="User Defined" thickness="0.035mm" weight="1oz" process="Electro Deposited" source="User"/>
+</layerdef>
+ <layerdef type="Core" id="{abaff753-8d87-45d2-aaf3-28b406858f07}" layer="1" name="Dielectric-1" locally_modified_material="yes">
+ <material name="User Defined" construction="" thickness="1.5mm" resin="50%" dielectric_constant_1g="4.5" dissipation_factor_1g="0.02" glass_transition_temperature="125degC" source="User"/>
+</layerdef>
+ <layerdef type="Signal" id="{bec43b11-0a37-4d4d-8266-004b7bdf01d8}" layer="16" name="Bottom" locally_modified_material="yes">
+ <material name="User Defined" thickness="0.035mm" weight="1oz" process="Electro Deposited" source="User"/>
+</layerdef>
+ <viadef name="Thru 1:16" startlayer="1" stoplayer="16" complement="no"/>
+ </layerstackup>
+ </designrules>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
@@ -526,402 +630,320 @@ design rules under a new name.</description>
 <attribute name="THERMALLOSS" value="" x="10.695" y="5.08" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TYPE" value="" x="10.695" y="5.08" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="Q3" library="Transistor" library_urn="urn:adsk.eagle:library:16378713" package="SOT23" package3d_urn="urn:adsk.eagle:package:28738/2" value="NMOSFET" x="13.335" y="18.415" smashed="yes" rot="R90">
-<attribute name="CATEGORY" value="Transistor" x="48.895" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DESCRIPTION" value="" x="48.895" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DRAIN_CURRENT" value="" x="48.895" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER" value="" x="48.895" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="48.895" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OPERATING_TEMP" value="" x="48.895" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PART_STATUS" value="" x="48.895" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="ROHS_COMPLIANT" value="" x="48.895" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SERIES" value="" x="48.895" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SUB-CATEGORY" value="MOSFET" x="48.895" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="THERMALLOSS" value="" x="48.895" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="TYPE" value="N-Channel" x="48.895" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="Q3" library="Transistor" library_urn="urn:adsk.eagle:library:16378713" package="SOT23" package3d_urn="urn:adsk.eagle:package:28738/2" value="NMOSFET" x="13.335" y="19.558" smashed="yes" rot="R90">
+<attribute name="CATEGORY" value="Transistor" x="48.895" y="50.038" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DESCRIPTION" value="" x="48.895" y="50.038" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DRAIN_CURRENT" value="" x="48.895" y="50.038" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER" value="" x="48.895" y="50.038" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="48.895" y="50.038" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OPERATING_TEMP" value="" x="48.895" y="50.038" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PART_STATUS" value="" x="48.895" y="50.038" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="ROHS_COMPLIANT" value="" x="48.895" y="50.038" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SERIES" value="" x="48.895" y="50.038" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SUB-CATEGORY" value="MOSFET" x="48.895" y="50.038" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="THERMALLOSS" value="" x="48.895" y="50.038" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="TYPE" value="N-Channel" x="48.895" y="50.038" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="Q4" library="Transistor" library_urn="urn:adsk.eagle:library:16378713" package="SOT23" package3d_urn="urn:adsk.eagle:package:28738/2" value="NMOSFET" x="13.335" y="22.225" smashed="yes" rot="R90">
-<attribute name="CATEGORY" value="Transistor" x="48.895" y="62.865" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DESCRIPTION" value="" x="48.895" y="62.865" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DRAIN_CURRENT" value="" x="48.895" y="62.865" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER" value="" x="48.895" y="62.865" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="48.895" y="62.865" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OPERATING_TEMP" value="" x="48.895" y="62.865" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PART_STATUS" value="" x="48.895" y="62.865" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="ROHS_COMPLIANT" value="" x="48.895" y="62.865" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SERIES" value="" x="48.895" y="62.865" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SUB-CATEGORY" value="MOSFET" x="48.895" y="62.865" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="THERMALLOSS" value="" x="48.895" y="62.865" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="TYPE" value="N-Channel" x="48.895" y="62.865" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="U$1" library="M5Stamp" library_urn="urn:adsk.wipprod:fs.file:vf.ou1fjKsRR4GbaAYxFxS1Ww" package="M5STAMP_C3U_HEADER" package3d_urn="urn:adsk.wipprod:fs.file:vf.IvRPL1raTD6jQr_vITOtSw?version=1" value="M5STAMP_C3UHEADER" x="10.695" y="22.987" smashed="yes" rot="R180"/>
+<element name="R1" library="Resistor" library_urn="urn:adsk.eagle:library:16378527" package="RESC1608X60" package3d_urn="urn:adsk.eagle:package:16378565/2" value="" x="17.145" y="18.5928" smashed="yes">
+<attribute name="CATEGORY" value="Resistor" x="17.145" y="18.5928" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="" x="17.145" y="18.5928" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="17.145" y="18.5928" size="1.778" layer="27" display="off"/>
+<attribute name="OPERATING_TEMP" value="" x="17.145" y="18.5928" size="1.778" layer="27" display="off"/>
+<attribute name="PART_STATUS" value="" x="17.145" y="18.5928" size="1.778" layer="27" display="off"/>
+<attribute name="RATING" value="" x="17.145" y="18.5928" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS_COMPLIANT" value="" x="17.145" y="18.5928" size="1.778" layer="27" display="off"/>
+<attribute name="SERIES" value="" x="17.145" y="18.5928" size="1.778" layer="27" display="off"/>
+<attribute name="SUB-CATEGORY" value="Fixed" x="17.145" y="18.5928" size="1.778" layer="27" display="off"/>
+<attribute name="THERMALLOSS" value="" x="17.145" y="18.5928" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANCE" value="" x="17.145" y="18.5928" size="1.778" layer="27" display="off"/>
+<attribute name="TYPE" value="" x="17.145" y="18.5928" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="17.145" y="17.1569" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="U$1" library="M5Stamp" library_urn="urn:adsk.wipprod:fs.file:vf.ou1fjKsRR4GbaAYxFxS1Ww" package="M5STAMP_C3U_HEADER" value="M5STAMP_C3UHEADER" x="10.695" y="22.987" smashed="yes" rot="R180"/>
-<element name="R1" library="Resistor" library_urn="urn:adsk.eagle:library:16378527" package="RESC1608X60" package3d_urn="urn:adsk.eagle:package:16378565/2" value="" x="17.145" y="17.4752" smashed="yes">
-<attribute name="CATEGORY" value="Resistor" x="17.145" y="17.4752" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="" x="17.145" y="17.4752" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="17.145" y="17.4752" size="1.778" layer="27" display="off"/>
-<attribute name="OPERATING_TEMP" value="" x="17.145" y="17.4752" size="1.778" layer="27" display="off"/>
-<attribute name="PART_STATUS" value="" x="17.145" y="17.4752" size="1.778" layer="27" display="off"/>
-<attribute name="RATING" value="" x="17.145" y="17.4752" size="1.778" layer="27" display="off"/>
-<attribute name="ROHS_COMPLIANT" value="" x="17.145" y="17.4752" size="1.778" layer="27" display="off"/>
-<attribute name="SERIES" value="" x="17.145" y="17.4752" size="1.778" layer="27" display="off"/>
-<attribute name="SUB-CATEGORY" value="Fixed" x="17.145" y="17.4752" size="1.778" layer="27" display="off"/>
-<attribute name="THERMALLOSS" value="" x="17.145" y="17.4752" size="1.778" layer="27" display="off"/>
-<attribute name="TOLERANCE" value="" x="17.145" y="17.4752" size="1.778" layer="27" display="off"/>
-<attribute name="TYPE" value="" x="17.145" y="17.4752" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="17.145" y="16.0393" size="1.27" layer="27" align="top-center"/>
+<element name="Q1" library="Transistor" library_urn="urn:adsk.eagle:library:16378713" package="SOT23" package3d_urn="urn:adsk.eagle:package:28738/2" value="NMOSFET" x="13.335" y="15.875" smashed="yes" rot="R90">
+<attribute name="CATEGORY" value="Transistor" x="13.335" y="15.875" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DESCRIPTION" value="" x="13.335" y="15.875" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DRAIN_CURRENT" value="" x="13.335" y="15.875" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER" value="" x="13.335" y="15.875" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="13.335" y="15.875" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OPERATING_TEMP" value="" x="13.335" y="15.875" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PART_STATUS" value="" x="13.335" y="15.875" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="ROHS_COMPLIANT" value="" x="13.335" y="15.875" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SERIES" value="" x="13.335" y="15.875" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SUB-CATEGORY" value="MOSFET" x="13.335" y="15.875" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="THERMALLOSS" value="" x="13.335" y="15.875" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="TYPE" value="N-Channel" x="13.335" y="15.875" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R2" library="Resistor" library_urn="urn:adsk.eagle:library:16378527" package="RESC1608X60" package3d_urn="urn:adsk.eagle:package:16378565/2" value="" x="17.145" y="21.2852" smashed="yes">
-<attribute name="CATEGORY" value="Resistor" x="17.145" y="21.2852" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="" x="17.145" y="21.2852" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="17.145" y="21.2852" size="1.778" layer="27" display="off"/>
-<attribute name="OPERATING_TEMP" value="" x="17.145" y="21.2852" size="1.778" layer="27" display="off"/>
-<attribute name="PART_STATUS" value="" x="17.145" y="21.2852" size="1.778" layer="27" display="off"/>
-<attribute name="RATING" value="" x="17.145" y="21.2852" size="1.778" layer="27" display="off"/>
-<attribute name="ROHS_COMPLIANT" value="" x="17.145" y="21.2852" size="1.778" layer="27" display="off"/>
-<attribute name="SERIES" value="" x="17.145" y="21.2852" size="1.778" layer="27" display="off"/>
-<attribute name="SUB-CATEGORY" value="Fixed" x="17.145" y="21.2852" size="1.778" layer="27" display="off"/>
-<attribute name="THERMALLOSS" value="" x="17.145" y="21.2852" size="1.778" layer="27" display="off"/>
-<attribute name="TOLERANCE" value="" x="17.145" y="21.2852" size="1.778" layer="27" display="off"/>
-<attribute name="TYPE" value="" x="17.145" y="21.2852" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="17.145" y="19.8493" size="1.27" layer="27" align="top-center"/>
+<element name="R5" library="Resistor" library_urn="urn:adsk.eagle:library:16378527" package="RESC1608X60" package3d_urn="urn:adsk.eagle:package:16378565/2" value="" x="17.145" y="14.9098" smashed="yes">
+<attribute name="CATEGORY" value="Resistor" x="19.685" y="14.9098" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="" x="19.685" y="14.9098" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="19.685" y="14.9098" size="1.778" layer="27" display="off"/>
+<attribute name="OPERATING_TEMP" value="" x="19.685" y="14.9098" size="1.778" layer="27" display="off"/>
+<attribute name="PART_STATUS" value="" x="19.685" y="14.9098" size="1.778" layer="27" display="off"/>
+<attribute name="RATING" value="" x="19.685" y="14.9098" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS_COMPLIANT" value="" x="19.685" y="14.9098" size="1.778" layer="27" display="off"/>
+<attribute name="SERIES" value="" x="19.685" y="14.9098" size="1.778" layer="27" display="off"/>
+<attribute name="SUB-CATEGORY" value="Fixed" x="19.685" y="14.9098" size="1.778" layer="27" display="off"/>
+<attribute name="THERMALLOSS" value="" x="19.685" y="14.9098" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANCE" value="" x="19.685" y="14.9098" size="1.778" layer="27" display="off"/>
+<attribute name="TYPE" value="" x="19.685" y="14.9098" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="17.145" y="13.4739" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="J2" library="Connector" library_urn="urn:adsk.eagle:library:16378166" package="2X05" package3d_urn="urn:adsk.eagle:package:22470/2" value="PINHD-2X5" x="10.69495" y="28.9052" smashed="yes" rot="MR0">
-<attribute name="CATEGORY" value="CONNECTOR" x="10.69495" y="30.1752" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="DESCRIPTION" value="" x="10.69495" y="30.1752" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MANUFACTURER" value="" x="10.69495" y="30.1752" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MPN" value="" x="10.69495" y="30.1752" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="OPERATING_TEMP" value="" x="10.69495" y="30.1752" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="PART_STATUS" value="" x="10.69495" y="30.1752" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="ROHS_COMPLIANT" value="" x="10.69495" y="30.1752" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="SERIES" value="" x="10.69495" y="30.1752" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="SUB-CATEGORY" value="PIN-HEADER" x="10.69495" y="30.1752" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="THERMALLOSS" value="" x="10.69495" y="30.1752" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="TYPE" value="" x="10.69495" y="30.1752" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="R7" library="Resistor" library_urn="urn:adsk.eagle:library:16378527" package="RESC1608X60" package3d_urn="urn:adsk.eagle:package:16378565/2" value="" x="17.145" y="20.4978" smashed="yes">
+<attribute name="CATEGORY" value="Resistor" x="17.145" y="20.4978" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="" x="17.145" y="20.4978" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="17.145" y="20.4978" size="1.778" layer="27" display="off"/>
+<attribute name="OPERATING_TEMP" value="" x="17.145" y="20.4978" size="1.778" layer="27" display="off"/>
+<attribute name="PART_STATUS" value="" x="17.145" y="20.4978" size="1.778" layer="27" display="off"/>
+<attribute name="RATING" value="" x="17.145" y="20.4978" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS_COMPLIANT" value="" x="17.145" y="20.4978" size="1.778" layer="27" display="off"/>
+<attribute name="SERIES" value="" x="17.145" y="20.4978" size="1.778" layer="27" display="off"/>
+<attribute name="SUB-CATEGORY" value="Fixed" x="17.145" y="20.4978" size="1.778" layer="27" display="off"/>
+<attribute name="THERMALLOSS" value="" x="17.145" y="20.4978" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANCE" value="" x="17.145" y="20.4978" size="1.778" layer="27" display="off"/>
+<attribute name="TYPE" value="" x="17.145" y="20.4978" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="17.145" y="19.0619" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="R3" library="Resistor" library_urn="urn:adsk.eagle:library:16378527" package="RESC1608X60" package3d_urn="urn:adsk.eagle:package:16378565/2" value="" x="17.145" y="32.7152" smashed="yes" rot="R180">
-<attribute name="CATEGORY" value="Resistor" x="14.605" y="32.7152" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER" value="" x="14.605" y="32.7152" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="14.605" y="32.7152" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OPERATING_TEMP" value="" x="14.605" y="32.7152" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="PART_STATUS" value="" x="14.605" y="32.7152" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="RATING" value="" x="14.605" y="32.7152" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="ROHS_COMPLIANT" value="" x="14.605" y="32.7152" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SERIES" value="" x="14.605" y="32.7152" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SUB-CATEGORY" value="Fixed" x="14.605" y="32.7152" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="THERMALLOSS" value="" x="14.605" y="32.7152" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TOLERANCE" value="" x="14.605" y="32.7152" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TYPE" value="" x="14.605" y="32.7152" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="17.145" y="34.1511" size="1.27" layer="27" rot="R180" align="top-center"/>
+<element name="JP1" library="Connector" library_urn="urn:adsk.eagle:library:16378166" package="1X05" package3d_urn="urn:adsk.eagle:package:22469/2" value="PINHD-1X5" x="10.695" y="30.353" smashed="yes" rot="MR0">
+<attribute name="CATEGORY" value="CONNECTOR" x="10.695" y="30.353" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DESCRIPTION" value="" x="10.695" y="30.353" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER" value="" x="10.695" y="30.353" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="" x="10.695" y="30.353" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="OPERATING_TEMP" value="" x="10.695" y="30.353" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="PART_STATUS" value="" x="10.695" y="30.353" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="ROHS_COMPLIANT" value="" x="10.695" y="30.353" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="SERIES" value="" x="10.695" y="30.353" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="SUB-CATEGORY" value="PIN-HEADER" x="10.695" y="30.353" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="THERMALLOSS" value="" x="10.695" y="30.353" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="TYPE" value="" x="10.695" y="30.353" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="R4" library="Resistor" library_urn="urn:adsk.eagle:library:16378527" package="RESC1608X60" package3d_urn="urn:adsk.eagle:package:16378565/2" value="" x="17.145" y="25.0952" smashed="yes" rot="R180">
-<attribute name="CATEGORY" value="Resistor" x="14.605" y="25.0952" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER" value="" x="14.605" y="25.0952" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="14.605" y="25.0952" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OPERATING_TEMP" value="" x="14.605" y="25.0952" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="PART_STATUS" value="" x="14.605" y="25.0952" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="RATING" value="" x="14.605" y="25.0952" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="ROHS_COMPLIANT" value="" x="14.605" y="25.0952" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SERIES" value="" x="14.605" y="25.0952" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SUB-CATEGORY" value="Fixed" x="14.605" y="25.0952" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="THERMALLOSS" value="" x="14.605" y="25.0952" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TOLERANCE" value="" x="14.605" y="25.0952" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TYPE" value="" x="14.605" y="25.0952" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="17.145" y="26.5311" size="1.27" layer="27" rot="R180" align="top-center"/>
+<element name="Q2" library="Transistor" library_urn="urn:adsk.eagle:library:16378713" package="SOT23" package3d_urn="urn:adsk.eagle:package:28738/2" value="NMOSFET" x="13.335" y="23.368" smashed="yes" rot="R90">
+<attribute name="CATEGORY" value="Transistor" x="13.335" y="23.368" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DESCRIPTION" value="" x="13.335" y="23.368" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DRAIN_CURRENT" value="" x="13.335" y="23.368" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER" value="" x="13.335" y="23.368" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="13.335" y="23.368" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OPERATING_TEMP" value="" x="13.335" y="23.368" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PART_STATUS" value="" x="13.335" y="23.368" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="ROHS_COMPLIANT" value="" x="13.335" y="23.368" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SERIES" value="" x="13.335" y="23.368" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SUB-CATEGORY" value="MOSFET" x="13.335" y="23.368" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="THERMALLOSS" value="" x="13.335" y="23.368" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="TYPE" value="N-Channel" x="13.335" y="23.368" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="Q1" library="Transistor" library_urn="urn:adsk.eagle:library:16378713" package="SOT23" package3d_urn="urn:adsk.eagle:package:28738/2" value="NMOSFET" x="13.335" y="14.605" smashed="yes" rot="R90">
-<attribute name="CATEGORY" value="Transistor" x="13.335" y="14.605" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DESCRIPTION" value="" x="13.335" y="14.605" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DRAIN_CURRENT" value="" x="13.335" y="14.605" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER" value="" x="13.335" y="14.605" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="13.335" y="14.605" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OPERATING_TEMP" value="" x="13.335" y="14.605" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PART_STATUS" value="" x="13.335" y="14.605" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="ROHS_COMPLIANT" value="" x="13.335" y="14.605" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SERIES" value="" x="13.335" y="14.605" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SUB-CATEGORY" value="MOSFET" x="13.335" y="14.605" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="THERMALLOSS" value="" x="13.335" y="14.605" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="TYPE" value="N-Channel" x="13.335" y="14.605" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R2" library="Resistor" library_urn="urn:adsk.eagle:library:16378527" package="RESC1608X60" package3d_urn="urn:adsk.eagle:package:16378565/2" value="" x="17.145" y="22.4028" smashed="yes">
+<attribute name="CATEGORY" value="Resistor" x="19.685" y="22.4028" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="" x="19.685" y="22.4028" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="19.685" y="22.4028" size="1.778" layer="27" display="off"/>
+<attribute name="OPERATING_TEMP" value="" x="19.685" y="22.4028" size="1.778" layer="27" display="off"/>
+<attribute name="PART_STATUS" value="" x="19.685" y="22.4028" size="1.778" layer="27" display="off"/>
+<attribute name="RATING" value="" x="19.685" y="22.4028" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS_COMPLIANT" value="" x="19.685" y="22.4028" size="1.778" layer="27" display="off"/>
+<attribute name="SERIES" value="" x="19.685" y="22.4028" size="1.778" layer="27" display="off"/>
+<attribute name="SUB-CATEGORY" value="Fixed" x="19.685" y="22.4028" size="1.778" layer="27" display="off"/>
+<attribute name="THERMALLOSS" value="" x="19.685" y="22.4028" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANCE" value="" x="19.685" y="22.4028" size="1.778" layer="27" display="off"/>
+<attribute name="TYPE" value="" x="19.685" y="22.4028" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="17.145" y="20.9669" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="R5" library="Resistor" library_urn="urn:adsk.eagle:library:16378527" package="RESC1608X60" package3d_urn="urn:adsk.eagle:package:16378565/2" value="" x="17.145" y="13.6652" smashed="yes">
-<attribute name="CATEGORY" value="Resistor" x="19.685" y="13.6652" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="" x="19.685" y="13.6652" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="19.685" y="13.6652" size="1.778" layer="27" display="off"/>
-<attribute name="OPERATING_TEMP" value="" x="19.685" y="13.6652" size="1.778" layer="27" display="off"/>
-<attribute name="PART_STATUS" value="" x="19.685" y="13.6652" size="1.778" layer="27" display="off"/>
-<attribute name="RATING" value="" x="19.685" y="13.6652" size="1.778" layer="27" display="off"/>
-<attribute name="ROHS_COMPLIANT" value="" x="19.685" y="13.6652" size="1.778" layer="27" display="off"/>
-<attribute name="SERIES" value="" x="19.685" y="13.6652" size="1.778" layer="27" display="off"/>
-<attribute name="SUB-CATEGORY" value="Fixed" x="19.685" y="13.6652" size="1.778" layer="27" display="off"/>
-<attribute name="THERMALLOSS" value="" x="19.685" y="13.6652" size="1.778" layer="27" display="off"/>
-<attribute name="TOLERANCE" value="" x="19.685" y="13.6652" size="1.778" layer="27" display="off"/>
-<attribute name="TYPE" value="" x="19.685" y="13.6652" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="17.145" y="12.2293" size="1.27" layer="27" align="top-center"/>
+<element name="R4" library="Resistor" library_urn="urn:adsk.eagle:library:16378527" package="RESC1608X60" package3d_urn="urn:adsk.eagle:package:16378565/2" value="" x="17.145" y="24.3078" smashed="yes" rot="R180">
+<attribute name="CATEGORY" value="Resistor" x="18.415" y="29.3878" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER" value="" x="18.415" y="29.3878" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="18.415" y="29.3878" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OPERATING_TEMP" value="" x="18.415" y="29.3878" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PART_STATUS" value="" x="18.415" y="29.3878" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="RATING" value="" x="18.415" y="29.3878" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ROHS_COMPLIANT" value="" x="18.415" y="29.3878" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SERIES" value="" x="18.415" y="29.3878" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SUB-CATEGORY" value="Fixed" x="18.415" y="29.3878" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="THERMALLOSS" value="" x="18.415" y="29.3878" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TOLERANCE" value="" x="18.415" y="29.3878" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TYPE" value="" x="18.415" y="29.3878" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="17.145" y="25.7437" size="1.27" layer="27" rot="R180" align="top-center"/>
 </element>
-<element name="Q2" library="Transistor" library_urn="urn:adsk.eagle:library:16378713" package="SOT23" package3d_urn="urn:adsk.eagle:package:28738/2" value="NMOSFET" x="13.335" y="10.795" smashed="yes" rot="R90">
-<attribute name="CATEGORY" value="Transistor" x="13.335" y="10.795" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DESCRIPTION" value="" x="13.335" y="10.795" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DRAIN_CURRENT" value="" x="13.335" y="10.795" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER" value="" x="13.335" y="10.795" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="13.335" y="10.795" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OPERATING_TEMP" value="" x="13.335" y="10.795" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PART_STATUS" value="" x="13.335" y="10.795" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="ROHS_COMPLIANT" value="" x="13.335" y="10.795" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SERIES" value="" x="13.335" y="10.795" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SUB-CATEGORY" value="MOSFET" x="13.335" y="10.795" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="THERMALLOSS" value="" x="13.335" y="10.795" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="TYPE" value="N-Channel" x="13.335" y="10.795" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="D2" library="Diode" library_urn="urn:adsk.eagle:library:16378169" package="SODFL3718X115" package3d_urn="urn:adsk.eagle:package:9427153/2" value="DIODE" x="14.351" y="36.417" smashed="yes" rot="R180">
+<attribute name="CATEGORY" value="Diode" x="13.081" y="36.417" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="" x="13.081" y="36.417" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="FORWARD_CURRENT" value="" x="13.081" y="36.417" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER" value="" x="13.081" y="36.417" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="13.081" y="36.417" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OPERATING_TEMP" value="" x="13.081" y="36.417" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PART_STATUS" value="" x="13.081" y="36.417" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="REVERSE_VOLTAGE" value="" x="13.081" y="36.417" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ROHS_COMPLIANT" value="" x="13.081" y="36.417" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SERIES" value="" x="13.081" y="36.417" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SUB-CATEGORY" value="Rectifier" x="13.081" y="36.417" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="THERMALLOSS" value="" x="13.081" y="36.417" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TYPE" value="" x="13.081" y="36.417" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R6" library="Resistor" library_urn="urn:adsk.eagle:library:16378527" package="RESC1608X60" package3d_urn="urn:adsk.eagle:package:16378565/2" value="" x="17.145" y="9.8552" smashed="yes">
-<attribute name="CATEGORY" value="Resistor" x="19.685" y="9.8552" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="" x="19.685" y="9.8552" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="19.685" y="9.8552" size="1.778" layer="27" display="off"/>
-<attribute name="OPERATING_TEMP" value="" x="19.685" y="9.8552" size="1.778" layer="27" display="off"/>
-<attribute name="PART_STATUS" value="" x="19.685" y="9.8552" size="1.778" layer="27" display="off"/>
-<attribute name="RATING" value="" x="19.685" y="9.8552" size="1.778" layer="27" display="off"/>
-<attribute name="ROHS_COMPLIANT" value="" x="19.685" y="9.8552" size="1.778" layer="27" display="off"/>
-<attribute name="SERIES" value="" x="19.685" y="9.8552" size="1.778" layer="27" display="off"/>
-<attribute name="SUB-CATEGORY" value="Fixed" x="19.685" y="9.8552" size="1.778" layer="27" display="off"/>
-<attribute name="THERMALLOSS" value="" x="19.685" y="9.8552" size="1.778" layer="27" display="off"/>
-<attribute name="TOLERANCE" value="" x="19.685" y="9.8552" size="1.778" layer="27" display="off"/>
-<attribute name="TYPE" value="" x="19.685" y="9.8552" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="17.145" y="8.4193" size="1.27" layer="27" align="top-center"/>
-</element>
-<element name="R7" library="Resistor" library_urn="urn:adsk.eagle:library:16378527" package="RESC1608X60" package3d_urn="urn:adsk.eagle:package:16378565/2" value="" x="17.145" y="19.3802" smashed="yes" rot="R180">
-<attribute name="CATEGORY" value="Resistor" x="17.145" y="19.3802" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER" value="" x="17.145" y="19.3802" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="17.145" y="19.3802" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OPERATING_TEMP" value="" x="17.145" y="19.3802" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="PART_STATUS" value="" x="17.145" y="19.3802" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="RATING" value="" x="17.145" y="19.3802" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="ROHS_COMPLIANT" value="" x="17.145" y="19.3802" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SERIES" value="" x="17.145" y="19.3802" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SUB-CATEGORY" value="Fixed" x="17.145" y="19.3802" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="THERMALLOSS" value="" x="17.145" y="19.3802" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TOLERANCE" value="" x="17.145" y="19.3802" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TYPE" value="" x="17.145" y="19.3802" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="17.145" y="20.8161" size="1.27" layer="27" rot="R180" align="top-center"/>
-</element>
-<element name="R8" library="Resistor" library_urn="urn:adsk.eagle:library:16378527" package="RESC1608X60" package3d_urn="urn:adsk.eagle:package:16378565/2" value="" x="17.145" y="23.1902" smashed="yes" rot="R180">
-<attribute name="CATEGORY" value="Resistor" x="14.605" y="23.1902" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER" value="" x="14.605" y="23.1902" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="14.605" y="23.1902" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OPERATING_TEMP" value="" x="14.605" y="23.1902" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="PART_STATUS" value="" x="14.605" y="23.1902" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="RATING" value="" x="14.605" y="23.1902" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="ROHS_COMPLIANT" value="" x="14.605" y="23.1902" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SERIES" value="" x="14.605" y="23.1902" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SUB-CATEGORY" value="Fixed" x="14.605" y="23.1902" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="THERMALLOSS" value="" x="14.605" y="23.1902" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TOLERANCE" value="" x="14.605" y="23.1902" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TYPE" value="" x="14.605" y="23.1902" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="17.145" y="24.6261" size="1.27" layer="27" rot="R180" align="top-center"/>
+<element name="R3" library="Resistor" library_urn="urn:adsk.eagle:library:16378527" package="RESC1608X60" package3d_urn="urn:adsk.eagle:package:16378565/2" value="" x="16.764" y="36.417" smashed="yes">
+<attribute name="CATEGORY" value="Resistor" x="19.304" y="36.417" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="" x="19.304" y="36.417" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="19.304" y="36.417" size="1.778" layer="27" display="off"/>
+<attribute name="OPERATING_TEMP" value="" x="19.304" y="36.417" size="1.778" layer="27" display="off"/>
+<attribute name="PART_STATUS" value="" x="19.304" y="36.417" size="1.778" layer="27" display="off"/>
+<attribute name="RATING" value="" x="19.304" y="36.417" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS_COMPLIANT" value="" x="19.304" y="36.417" size="1.778" layer="27" display="off"/>
+<attribute name="SERIES" value="" x="19.304" y="36.417" size="1.778" layer="27" display="off"/>
+<attribute name="SUB-CATEGORY" value="Fixed" x="19.304" y="36.417" size="1.778" layer="27" display="off"/>
+<attribute name="THERMALLOSS" value="" x="19.304" y="36.417" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANCE" value="" x="19.304" y="36.417" size="1.778" layer="27" display="off"/>
+<attribute name="TYPE" value="" x="19.304" y="36.417" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="16.764" y="34.9811" size="1.27" layer="27" align="top-center"/>
 </element>
 </elements>
 <signals>
-<signal name="HD_LED-">
-<contactref element="J1" pad="4"/>
-<contactref element="Q2" pad="2"/>
-<wire x1="14.435" y1="11.745" x2="16.068" y2="11.745" width="0.254" layer="1"/>
-<wire x1="16.068" y1="11.745" x2="16.129" y2="11.684" width="0.254" layer="1" curve="-90"/>
-<via x="16.129" y="11.684" extent="1-16" drill="0.35"/>
-<wire x1="16.129" y1="11.684" x2="14.478" y2="10.033" width="0.254" layer="16" curve="90"/>
-<wire x1="14.478" y1="10.033" x2="14.478" y2="5.053" width="0.254" layer="16"/>
-<wire x1="14.478" y1="5.053" x2="13.235" y2="3.81" width="0.254" layer="16" curve="-90"/>
-</signal>
 <signal name="GND">
 <contactref element="U$1" pad="GND3"/>
 <contactref element="U$1" pad="GND1"/>
 <contactref element="U$1" pad="GND2"/>
-<polygon width="0.1524" layer="16" spacing="1.27" pour="solid" thermals="yes">
-<vertex x="-1.1938" y="17.6022"/>
-<vertex x="25.3238" y="17.6022"/>
-<vertex x="25.3238" y="46.0248"/>
-<vertex x="-1.1938" y="46.0248"/>
-</polygon>
-<polygon width="0.1524" layer="1" spacing="1.27" pour="solid" thermals="yes">
-<vertex x="-1.1938" y="17.6022"/>
-<vertex x="25.3238" y="17.6022"/>
-<vertex x="25.3238" y="45.7708"/>
-<vertex x="-1.1938" y="45.7708"/>
-</polygon>
-<contactref element="J2" pad="3"/>
-<contactref element="J2" pad="8"/>
-<contactref element="J2" pad="4"/>
+<polygonpour layer="16" thermalwidth="0.1524" width="0.1524" hatchspacing="1.27" fillvisible="no">
+<polygonoutlineobjects>
+<vertex x="-1.27" y="46.101"/>
+<vertex x="25.4" y="46.101"/>
+<vertex x="25.4" y="17.399"/>
+<vertex x="-1.27" y="17.399"/>
+</polygonoutlineobjects>
+<polygonfilldetails>
+</polygonfilldetails>
+</polygonpour>
+<polygonpour layer="1" thermalwidth="0.1524" width="0.1524" hatchspacing="1.27" fillvisible="no">
+<polygonoutlineobjects>
+<vertex x="-1.27" y="45.847"/>
+<vertex x="25.4" y="45.847"/>
+<vertex x="25.4" y="17.399"/>
+<vertex x="-1.27" y="17.399"/>
+</polygonoutlineobjects>
+<polygonfilldetails>
+</polygonfilldetails>
+</polygonpour>
 <contactref element="J1" pad="7"/>
-<contactref element="J1" pad="6"/>
-<wire x1="9.398" y1="5.107" x2="10.695" y2="3.81" width="0.3048" layer="16" curve="90"/>
-<wire x1="9.398" y1="5.107" x2="9.398" y2="7.366" width="0.3048" layer="16"/>
-<wire x1="9.398" y1="7.366" x2="10.033" y2="8.001" width="0.3048" layer="16" curve="-90"/>
-<wire x1="10.668" y1="8.636" x2="10.033" y2="8.001" width="0.3048" layer="16" curve="-90"/>
-<contactref element="Q4" pad="2"/>
 <contactref element="Q3" pad="2"/>
-<wire x1="10.69495" y1="22.8826" x2="10.69495" y2="19.05" width="0.3048" layer="16"/>
-<wire x1="10.69495" y1="19.05" x2="10.69495" y2="8.66295" width="0.3048" layer="16"/>
-<wire x1="10.69495" y1="8.66295" x2="10.668" y2="8.636" width="0.3048" layer="16"/>
-<wire x1="14.435" y1="23.175" x2="11.00995" y2="23.175" width="0.1524" layer="1"/>
-<wire x1="11.00995" y1="23.175" x2="10.69495" y2="22.86" width="0.1524" layer="1" curve="90"/>
-<wire x1="11.00995" y1="19.365" x2="14.435" y2="19.365" width="0.1524" layer="1"/>
-<wire x1="10.69495" y1="19.05" x2="11.00995" y2="19.365" width="0.1524" layer="1" curve="-90"/>
-<via x="10.69495" y="19.05" extent="1-16" drill="0.35"/>
-<via x="10.69495" y="22.8826" extent="1-16" drill="0.35"/>
-<wire x1="10.69495" y1="22.86" x2="10.69495" y2="22.8826" width="0.1524" layer="1" curve="90"/>
-<contactref element="J2" pad="5"/>
-<wire x1="10.69495" y1="27.6352" x2="10.69495" y2="22.8826" width="0.254" layer="16"/>
 <contactref element="R7" pad="1"/>
-<contactref element="R8" pad="1"/>
-<wire x1="17.9602" y1="23.1902" x2="17.145" y2="22.2988" width="0.1524" layer="1"/>
-<wire x1="17.145" y1="22.2988" x2="17.145" y2="20.193" width="0.1524" layer="1"/>
-<wire x1="17.145" y1="20.193" x2="17.907" y2="19.431" width="0.1524" layer="1"/>
-<wire x1="17.907" y1="19.431" x2="17.9602" y2="19.3802" width="0.1524" layer="1"/>
-<wire x1="14.435" y1="19.365" x2="15.263" y2="20.193" width="0.1524" layer="1"/>
-<wire x1="15.263" y1="20.193" x2="17.145" y2="20.193" width="0.1524" layer="1"/>
-<wire x1="1.695" y1="38.957" x2="5.61495" y2="38.957" width="0.1524" layer="16"/>
-<wire x1="5.61495" y1="38.957" x2="8.15495" y2="36.417" width="0.1524" layer="16" curve="-90"/>
-<wire x1="8.15495" y1="36.417" x2="8.15495" y2="30.1752" width="0.1524" layer="16"/>
-<wire x1="10.69495" y1="27.6352" x2="13.23495" y2="27.6352" width="0.1524" layer="16"/>
-<wire x1="13.23495" y1="27.6352" x2="13.23495" y2="30.1752" width="0.1524" layer="16"/>
-<wire x1="19.695" y1="31.337" x2="14.39675" y2="31.337" width="0.1524" layer="16"/>
-<wire x1="14.39675" y1="31.337" x2="13.23495" y2="30.1752" width="0.1524" layer="16" curve="90"/>
-<wire x1="8.15495" y1="30.1752" x2="9.513075" y2="28.797" width="0.1524" layer="16"/>
-<wire x1="9.513075" y1="28.797" x2="10.69495" y2="27.6352" width="0.1524" layer="16"/>
-<wire x1="1.695" y1="28.797" x2="9.513075" y2="28.797" width="0.1524" layer="16"/>
-<wire x1="8.155" y1="6.35" x2="8.382" y2="6.35" width="0.3048" layer="16"/>
-<wire x1="8.382" y1="6.35" x2="9.398" y2="7.366" width="0.3048" layer="16" curve="90"/>
-</signal>
-<signal name="RESET#">
-<contactref element="J1" pad="8"/>
-<contactref element="Q4" pad="3"/>
-<wire x1="12.235" y1="22.225" x2="11.938" y2="22.225" width="0.254" layer="1"/>
-<wire x1="11.938" y1="22.225" x2="9.398" y2="19.685" width="0.254" layer="1" curve="90"/>
-<wire x1="9.398" y1="19.685" x2="9.398" y2="5.053" width="0.254" layer="1"/>
-<wire x1="9.398" y1="5.053" x2="8.155" y2="3.81" width="0.254" layer="1" curve="-90"/>
+<contactref element="JP1" pad="4"/>
+<contactref element="Q2" pad="2"/>
+<contactref element="R4" pad="1"/>
+<wire x1="1.695" y1="38.957" x2="8.155" y2="38.957" width="0.254" layer="16"/>
+<wire x1="8.155" y1="38.957" x2="8.155" y2="30.353" width="0.254" layer="16"/>
+<wire x1="4.472" y1="28.3464" x2="4.472" y2="28.797" width="0.254" layer="16"/>
+<wire x1="4.472" y1="28.797" x2="1.695" y2="28.797" width="0.254" layer="16"/>
+<wire x1="8.155" y1="30.353" x2="8.155" y2="28.3464" width="0.254" layer="16"/>
+<wire x1="8.155" y1="28.3464" x2="4.472" y2="28.3464" width="0.254" layer="16"/>
+<wire x1="19.695" y1="32.3596" x2="8.155" y2="32.3596" width="0.254" layer="16"/>
+<wire x1="8.155" y1="32.3596" x2="8.155" y2="30.353" width="0.254" layer="16"/>
+<wire x1="8.155" y1="6.35" x2="8.155" y2="30.353" width="0.254" layer="1"/>
+<wire x1="19.695" y1="32.3596" x2="19.695" y2="31.337" width="0.254" layer="16"/>
+<wire x1="13.4556" y1="24.318" x2="13.4556" y2="20.4978" width="0.254" layer="1"/>
+<wire x1="17.9602" y1="31.337" x2="17.9602" y2="24.3078" width="0.254" layer="1"/>
+<wire x1="19.695" y1="31.337" x2="17.9602" y2="31.337" width="0.254" layer="1"/>
+<wire x1="8.155" y1="33.02" x2="8.155" y2="30.353" width="0.254" layer="1"/>
+<wire x1="13.97" y1="33.02" x2="8.155" y2="33.02" width="0.254" layer="1"/>
+<wire x1="14.435" y1="24.318" x2="13.4556" y2="24.318" width="0.254" layer="1"/>
+<wire x1="13.4556" y1="20.4978" x2="14.435" y2="20.4978" width="0.254" layer="1"/>
+<wire x1="14.435" y1="20.508" x2="14.435" y2="20.4978" width="0.254" layer="1"/>
+<wire x1="14.435" y1="20.4978" x2="16.3298" y2="20.4978" width="0.254" layer="1"/>
+<wire x1="14.4542" y1="33.02" x2="14.4542" y2="24.3372" width="0.6096" layer="1"/>
+<wire x1="14.4542" y1="24.3372" x2="14.435" y2="24.318" width="0.6096" layer="1" curve="-90"/>
+<wire x1="14.4542" y1="33.02" x2="13.97" y2="33.02" width="0.254" layer="1"/>
 </signal>
 <signal name="PWR_LED-">
 <contactref element="J1" pad="3"/>
 <contactref element="Q1" pad="2"/>
-<wire x1="14.435" y1="15.555" x2="16.195" y2="15.555" width="0.254" layer="1"/>
-<wire x1="16.195" y1="15.555" x2="16.256" y2="15.494" width="0.254" layer="1" curve="-90"/>
-<via x="16.256" y="15.494" extent="1-16" drill="0.35"/>
-<wire x1="16.256" y1="15.494" x2="15.775" y2="15.494" width="0.254" layer="16"/>
-<wire x1="15.775" y1="15.494" x2="13.235" y2="12.954" width="0.254" layer="16" curve="90"/>
-<wire x1="13.235" y1="12.954" x2="13.235" y2="6.35" width="0.254" layer="16"/>
+<wire x1="14.435" y1="16.825" x2="11.618" y2="16.825" width="0.254" layer="1"/>
+<wire x1="11.618" y1="16.825" x2="11.176" y2="16.383" width="0.254" layer="1" curve="90"/>
+<wire x1="11.176" y1="16.383" x2="11.176" y2="15.367" width="0.254" layer="1"/>
+<wire x1="11.176" y1="15.367" x2="11.557" y2="14.986" width="0.254" layer="1" curve="90"/>
+<wire x1="13.235" y1="6.35" x2="13.235" y2="14.578" width="0.254" layer="1"/>
+<wire x1="13.235" y1="14.578" x2="12.827" y2="14.986" width="0.254" layer="1" curve="90"/>
+<wire x1="12.827" y1="14.986" x2="11.557" y2="14.986" width="0.254" layer="1"/>
 </signal>
 <signal name="PWRBTN#">
 <contactref element="J1" pad="5"/>
 <contactref element="Q3" pad="3"/>
-<wire x1="12.235" y1="18.415" x2="10.695" y2="16.875" width="0.254" layer="1" curve="90"/>
-<wire x1="10.695" y1="16.875" x2="10.695" y2="6.35" width="0.254" layer="1"/>
+<contactref element="JP1" pad="3"/>
+<wire x1="10.695" y1="19.558" x2="10.695" y2="20.066" width="0.254" layer="1"/>
+<wire x1="10.695" y1="20.066" x2="10.695" y2="30.353" width="0.254" layer="1"/>
+<wire x1="12.235" y1="19.558" x2="10.695" y2="19.558" width="0.254" layer="1"/>
+<wire x1="10.695" y1="19.558" x2="10.695" y2="19.05" width="0.254" layer="1"/>
+<wire x1="10.695" y1="19.05" x2="10.695" y2="6.35" width="0.254" layer="1"/>
+<wire x1="11.203" y1="19.558" x2="10.695" y2="19.05" width="0.254" layer="1" curve="90"/>
+<wire x1="12.235" y1="19.558" x2="11.203" y2="19.558" width="0.254" layer="1"/>
+<wire x1="11.203" y1="19.558" x2="10.695" y2="20.066" width="0.254" layer="1" curve="-90"/>
 </signal>
 <signal name="PWRBTN_MB">
 <contactref element="R1" pad="2"/>
 <contactref element="U$1" pad="G6"/>
-<wire x1="17.9602" y1="17.4752" x2="18.5332" y2="17.4752" width="0.254" layer="1"/>
-<wire x1="18.5332" y1="17.4752" x2="19.695" y2="18.637" width="0.254" layer="1" curve="90"/>
-</signal>
-<signal name="RESETBTN_MB">
-<contactref element="R2" pad="2"/>
-<contactref element="U$1" pad="G7"/>
-<wire x1="19.5868" y1="21.2852" x2="17.9602" y2="21.2852" width="0.254" layer="1"/>
-<wire x1="19.695" y1="21.177" x2="19.5868" y2="21.2852" width="0.254" layer="1" curve="90"/>
+<wire x1="17.9602" y1="18.5928" x2="18.0044" y2="18.637" width="0.254" layer="1"/>
+<wire x1="18.0044" y1="18.637" x2="19.695" y2="18.637" width="0.254" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="Q3" pad="1"/>
 <contactref element="R1" pad="1"/>
-<wire x1="14.4452" y1="17.4752" x2="14.435" y2="17.465" width="0.254" layer="1" curve="90"/>
-<wire x1="16.3298" y1="17.4752" x2="14.4452" y2="17.4752" width="0.254" layer="1"/>
 <contactref element="R7" pad="2"/>
-<wire x1="16.3298" y1="17.4752" x2="16.3298" y2="19.3802" width="0.1524" layer="1"/>
-</signal>
-<signal name="N$2">
-<contactref element="Q4" pad="1"/>
-<contactref element="R2" pad="1"/>
-<wire x1="14.4905" y1="21.209" x2="14.435" y2="21.275" width="0.1524" layer="1" curve="-90"/>
-<wire x1="14.435" y1="21.275" x2="16.3196" y2="21.275" width="0.254" layer="1"/>
-<wire x1="16.3196" y1="21.275" x2="16.3298" y2="21.2852" width="0.254" layer="1" curve="90"/>
-<contactref element="R8" pad="2"/>
-<wire x1="16.3298" y1="21.2852" x2="16.3298" y2="23.1902" width="0.1524" layer="1"/>
-</signal>
-<signal name="PWR_LED_CASE">
-<contactref element="U$1" pad="G1"/>
-<contactref element="R3" pad="1"/>
-<wire x1="17.9602" y1="32.7152" x2="17.9602" y2="34.6822" width="0.254" layer="1"/>
-<wire x1="17.9602" y1="34.6822" x2="19.695" y2="36.417" width="0.254" layer="1" curve="-90"/>
-</signal>
-<signal name="HD_LED_CASE">
-<contactref element="U$1" pad="G10"/>
-<contactref element="R4" pad="1"/>
-<wire x1="18.5332" y1="25.0952" x2="17.9602" y2="25.0952" width="0.254" layer="1"/>
-<wire x1="19.695" y1="26.257" x2="18.5332" y2="25.0952" width="0.254" layer="1" curve="-90"/>
-</signal>
-<signal name="RESETBTN_CASE">
-<contactref element="U$1" pad="G8"/>
-<contactref element="J2" pad="7"/>
-<wire x1="8.15495" y1="27.6352" x2="8.15495" y2="27.559" width="0.254" layer="1"/>
-<wire x1="8.15495" y1="27.559" x2="11.71095" y2="24.003" width="0.254" layer="1" curve="90"/>
-<wire x1="11.71095" y1="24.003" x2="19.409" y2="24.003" width="0.254" layer="1"/>
-<wire x1="19.409" y1="24.003" x2="19.695" y2="23.717" width="0.254" layer="1" curve="-90"/>
-</signal>
-<signal name="N$4">
-<contactref element="R3" pad="2"/>
-<contactref element="J2" pad="2"/>
-<wire x1="15.77495" y1="30.1752" x2="15.77495" y2="32.16035" width="0.254" layer="1"/>
-<wire x1="16.3298" y1="32.7152" x2="15.77495" y2="32.16035" width="0.254" layer="1" curve="90"/>
-</signal>
-<signal name="N$3">
-<contactref element="J2" pad="1"/>
-<contactref element="R4" pad="2"/>
-<wire x1="15.77495" y1="25.65005" x2="15.77495" y2="27.6352" width="0.254" layer="1"/>
-<wire x1="16.3298" y1="25.0952" x2="15.77495" y2="25.65005" width="0.254" layer="1" curve="-90"/>
+<wire x1="16.3298" y1="18.5928" x2="17.9602" y2="20.2232" width="0.254" layer="1"/>
+<wire x1="17.9602" y1="20.2232" x2="17.9602" y2="20.4978" width="0.254" layer="1"/>
+<wire x1="16.3298" y1="18.5928" x2="14.4502" y2="18.5928" width="0.254" layer="1"/>
+<wire x1="14.4502" y1="18.5928" x2="14.435" y2="18.608" width="0.254" layer="1"/>
 </signal>
 <signal name="PWR_LED+">
 <contactref element="J1" pad="1"/>
 <contactref element="R5" pad="2"/>
-<wire x1="17.145" y1="7.72" x2="15.775" y2="6.35" width="0.254" layer="16" curve="-90"/>
-<via x="17.145" y="12.4026" extent="1-16" drill="0.35"/>
-<wire x1="17.145" y1="7.72" x2="17.145" y2="12.4026" width="0.254" layer="16"/>
-<wire x1="17.145" y1="12.4026" x2="17.145" y2="12.85" width="0.254" layer="1"/>
-<wire x1="17.145" y1="12.85" x2="17.9602" y2="13.6652" width="0.254" layer="1" curve="-90"/>
-</signal>
-<signal name="HD_LED+">
-<contactref element="J1" pad="2"/>
-<contactref element="R6" pad="2"/>
-<wire x1="17.9602" y1="9.8552" x2="17.145" y2="8.9343" width="0.254" layer="1" curve="90"/>
-<wire x1="17.145" y1="8.9343" x2="17.145" y2="4.572" width="0.254" layer="1"/>
-<wire x1="17.145" y1="4.572" x2="16.383" y2="3.81" width="0.254" layer="1" curve="-90"/>
-<wire x1="16.383" y1="3.81" x2="15.775" y2="3.81" width="0.254" layer="1"/>
+<wire x1="15.775" y1="6.35" x2="15.775" y2="12.981" width="0.254" layer="1"/>
+<wire x1="15.775" y1="12.981" x2="16.256" y2="13.462" width="0.254" layer="1" curve="-90"/>
+<wire x1="16.256" y1="13.462" x2="17.653" y2="13.462" width="0.254" layer="1"/>
+<wire x1="17.653" y1="13.462" x2="18.034" y2="13.843" width="0.254" layer="1" curve="90"/>
+<wire x1="18.034" y1="13.843" x2="18.034" y2="14.836" width="0.254" layer="1"/>
+<wire x1="18.034" y1="14.836" x2="17.9602" y2="14.9098" width="0.254" layer="1" curve="90"/>
 </signal>
 <signal name="N$5">
 <contactref element="Q1" pad="1"/>
 <contactref element="R5" pad="1"/>
-<wire x1="14.4452" y1="13.6652" x2="14.435" y2="13.655" width="0.254" layer="1" curve="90"/>
-<wire x1="16.3298" y1="13.6652" x2="14.4452" y2="13.6652" width="0.254" layer="1"/>
+<wire x1="16.3298" y1="14.925" x2="14.435" y2="14.925" width="0.254" layer="1"/>
+<wire x1="16.3298" y1="14.9098" x2="16.3298" y2="14.925" width="0.254" layer="1"/>
 </signal>
 <signal name="PWR_LED_MB">
 <contactref element="U$1" pad="G5"/>
 <contactref element="Q1" pad="3"/>
-<wire x1="12.235" y1="14.605" x2="18.203" y2="14.605" width="0.254" layer="1"/>
-<wire x1="18.203" y1="14.605" x2="19.695" y2="16.097" width="0.254" layer="1" curve="90"/>
+<wire x1="12.235" y1="15.875" x2="19.473" y2="15.875" width="0.254" layer="1"/>
+<wire x1="19.473" y1="15.875" x2="19.695" y2="16.097" width="0.254" layer="1"/>
 </signal>
-<signal name="HD_LED_MB">
-<contactref element="U$1" pad="G4"/>
-<contactref element="Q2" pad="3"/>
-<wire x1="12.235" y1="10.795" x2="17.272" y2="10.795" width="0.254" layer="1"/>
-<wire x1="17.272" y1="10.795" x2="18.542" y2="12.065" width="0.254" layer="1" curve="90"/>
-<wire x1="18.542" y1="12.065" x2="18.542" y2="12.404" width="0.254" layer="1"/>
-<wire x1="18.542" y1="12.404" x2="19.695" y2="13.557" width="0.254" layer="1" curve="-90"/>
-</signal>
-<signal name="N$6">
+<signal name="N$2">
 <contactref element="Q2" pad="1"/>
-<contactref element="R6" pad="1"/>
-<wire x1="14.435" y1="9.845" x2="14.4452" y2="9.8552" width="0.254" layer="1" curve="-90"/>
-<wire x1="14.4452" y1="9.8552" x2="16.3298" y2="9.8552" width="0.254" layer="1"/>
+<contactref element="R2" pad="1"/>
+<contactref element="R4" pad="2"/>
+<wire x1="14.435" y1="22.418" x2="16.3146" y2="22.418" width="0.254" layer="1"/>
+<wire x1="16.3146" y1="22.418" x2="16.3298" y2="22.4028" width="0.254" layer="1"/>
+<wire x1="16.3298" y1="22.4028" x2="16.3298" y2="24.3078" width="0.254" layer="1"/>
 </signal>
-<signal name="PWRBTN_CASE">
-<contactref element="U$1" pad="G0"/>
-<contactref element="J2" pad="6"/>
-<wire x1="19.695" y1="38.957" x2="13.23495" y2="38.957" width="0.254" layer="1"/>
-<wire x1="13.23495" y1="38.957" x2="10.69495" y2="36.417" width="0.254" layer="1" curve="90"/>
-<wire x1="10.69495" y1="36.417" x2="10.69495" y2="30.1752" width="0.254" layer="1"/>
+<signal name="PWR_LED_CASE">
+<contactref element="JP1" pad="2"/>
+<contactref element="Q2" pad="3"/>
+<wire x1="12.235" y1="23.368" x2="12.235" y2="29.353" width="0.762" layer="1"/>
+<wire x1="12.235" y1="29.353" x2="13.235" y2="30.353" width="0.762" layer="1" curve="-90"/>
+</signal>
+<signal name="PWR_LED_CASE_SW">
+<contactref element="U$1" pad="G1"/>
+<contactref element="R2" pad="2"/>
+<wire x1="17.9602" y1="22.4028" x2="17.4752" y2="22.4028" width="0.254" layer="1"/>
+<wire x1="17.4752" y1="22.4028" x2="17.145" y2="22.733" width="0.254" layer="1" curve="-90"/>
+<wire x1="17.145" y1="22.733" x2="17.145" y2="35.9828" width="0.254" layer="1"/>
+<contactref element="R3" pad="2"/>
+<wire x1="19.695" y1="36.417" x2="17.5792" y2="36.417" width="0.254" layer="1"/>
+<wire x1="17.145" y1="35.9828" x2="17.5792" y2="36.417" width="0.254" layer="1" curve="-90"/>
+</signal>
+<signal name="VCC">
+<contactref element="U$1" pad="5V2"/>
+<contactref element="D2" pad="2"/>
+<wire x1="1.695" y1="36.417" x2="12.7506" y2="36.417" width="0.762" layer="1"/>
+</signal>
+<signal name="N$4">
+<contactref element="D2" pad="1"/>
+<contactref element="JP1" pad="1"/>
+<wire x1="15.8244" y1="30.353" x2="15.775" y2="30.353" width="0.254" layer="1"/>
+<contactref element="R3" pad="1"/>
+<wire x1="15.775" y1="30.353" x2="15.775" y2="36.2432" width="0.762" layer="1"/>
+<wire x1="15.775" y1="36.2432" x2="15.9488" y2="36.417" width="0.762" layer="1" curve="-90"/>
+<wire x1="15.9488" y1="36.417" x2="15.9514" y2="36.417" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
@@ -948,6 +970,14 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
+</note>
+<note version="9.7" minversion="9.7.0" severity="warning">
+Since Version 9.7.0 new layer stackup definition has been added,
+which will not be loaded with this version.
+</note>
+<note version="9.7" minversion="9.7.0" severity="warning">
+Since Version 9.7.0 new active CAMJOB file name has been added,
+which will not be loaded with this version.
 </note>
 </compatibility>
 </eagle>
